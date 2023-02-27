@@ -1,0 +1,54 @@
+
+/* Propiedades Globales */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body { 
+    scroll-behavior: smooth
+  }
+
+/* Página principal */
+
+/* Contenedor Principal */
+.containerIndex{
+    /* display */
+    display: flex;
+
+    /* Properties */
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+/* Contenedor posiciones */
+
+.positionNavbar{
+
+}
+
+.firstBlock{
+    /* Properties */
+    background-color: red;
+
+    /* Sizes */
+    height: 10em;
+}
+
+.secondBlock{
+    /* Properties */
+    background-color: green;
+
+    /* Sizes */
+    height: 10em;
+}
+
+.thirdBlock{
+    /* Properties */
+    background-color: orange;
+
+    /* Sizes */
+    height: 10em;
+}

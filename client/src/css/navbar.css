@@ -1,0 +1,28 @@
+
+/* Contenedor principal */
+
+.containerNavbar{
+    /* display */
+    display: flex;
+    flex-wrap: wrap;
+
+    /* Properties */
+    justify-content: space-around;
+    align-items: center;
+    background-color: blue;
+    color: aliceblue;
+
+    /* Sizes */
+    height: 4em;
+}
+
+/* Elementos del Navbar */
+
+.navegators{
+    /* Properties */
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(255, 0, 242);
+    
+    /* Sizes */
+    font-size: 1.2em;
+}
