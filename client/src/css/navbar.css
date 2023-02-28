@@ -11,18 +11,32 @@
     align-items: center;
     background-color: blue;
     color: aliceblue;
-
+    
     /* Sizes */
     height: 4em;
 }
 
 /* Elementos del Navbar */
 
+.imgNavbar{
+    background-color: blueviolet;
+    color: blue;
+}
+
 .navegators{
     /* Properties */
     font-family:Arial, Helvetica, sans-serif;
     color: rgb(255, 0, 242);
-    
+    cursor: pointer;
+
     /* Sizes */
     font-size: 1.2em;
+    
 }
+
+.navegators > .active {
+   
+    color: antiquewhite;
+    
+}
+

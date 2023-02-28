@@ -7,10 +7,6 @@
     box-sizing: border-box;
 }
 
-html, body { 
-    scroll-behavior: smooth
-  }
-
 /* Página principal */
 
 /* Contenedor Principal */
@@ -21,12 +17,14 @@ html, body {
     /* Properties */
     flex-direction: column;
     flex-wrap: wrap;
+
 }
 
 /* Contenedor posiciones */
 
 .positionNavbar{
-
+    position: sticky;
+    top: 0;
 }
 
 .firstBlock{
@@ -34,7 +32,7 @@ html, body {
     background-color: red;
 
     /* Sizes */
-    height: 10em;
+    height: 20em;
 }
 
 .secondBlock{
@@ -42,12 +40,21 @@ html, body {
     background-color: green;
 
     /* Sizes */
-    height: 10em;
+    height: 20em;
 }
 
 .thirdBlock{
     /* Properties */
     background-color: orange;
+
+    /* Sizes */
+    height: 30em;
+}
+
+.fourthBlock{
+    /* Properties */
+    background-color: black;
+    color: white;
 
     /* Sizes */
     height: 10em;

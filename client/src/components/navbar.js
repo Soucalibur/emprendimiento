@@ -1,20 +1,49 @@
 import s from "../css/navbar.css"
 
+import { Link, animateScroll as scroll } from "react-scroll";
+
 const Navbar = ()=>{
 
+    const scrollToTop = () => {
+        scroll.scrollToTop(); 
+    }
+
     return(
-        <div className="containerNavbar">
-            <div>
+        <div className="containerNavbar" >
+            <div className="imgNavbar" onClick={scrollToTop}>
                 <p>Imagen del logo</p>
             </div>
-            <div>
-                <a href="#nosotros" className="navegators">Quienes somos</a> 
+            <div className="navegators">
+                <Link 
+                    to="nosotros"
+                    smooth="true"
+                    spy={true}
+                    activeClass="active"
+                    offset={-64}
+                    >
+                    <p>Quienes somos</p>
+                </Link>
             </div>
-            <div>
-                <a href="#servicios" className="navegators">Servicios</a> 
+            <div className="navegators">
+                <Link 
+                    to="servicios"
+                    smooth="true"
+                    spy={true}
+                    activeClass= "active"
+                    offset={-64}>
+                    <p>Servicios</p>
+                </Link>
+                
             </div>
-            <div>
-                <a href="#contacto" className="navegators">Contactenos</a> 
+            <div className="navegators">
+                <Link 
+                    to="contacto"
+                    smooth="true"
+                    spy={true}
+                    activeClass="active"
+                    offset={-64}>
+                    <p>Contactenos</p>
+                </Link>
             </div>
         </div>
     )
