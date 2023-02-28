@@ -21,6 +21,7 @@
 .imgNavbar{
     background-color: blueviolet;
     color: blue;
+    cursor: pointer;
 }
 
 .navegators{
