@@ -19,9 +19,15 @@
 /* Elementos del Navbar */
 
 .imgNavbar{
-    background-color: blueviolet;
+    /* Properties */
+    /* background-color: white; */
     color: blue;
     cursor: pointer;
+    
+
+    /* Sizes */
+    width: 6em;
+    height: 3em;
 }
 
 .navegators{

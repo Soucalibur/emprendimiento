@@ -1,6 +1,7 @@
 import s from "../css/index.css"
 import Navbar from "./navbar"
 import LenisFunction from "../helper/lenis"
+import Slider from "../helper/carousel"
 
 const Index = ()=>{
 
@@ -12,8 +13,8 @@ const Index = ()=>{
                 <Navbar></Navbar>
             </div>
             <div className="firstBlock" id="nosotros">
-                <h3>Nosotros</h3>
-                <p>Acá puede ir información de la que sea necesaria</p>
+                <Slider></Slider>
+
             </div>
             <div className="secondBlock" id="servicios">
                 <h3>Servicios</h3>

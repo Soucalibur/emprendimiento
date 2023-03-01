@@ -1,4 +1,5 @@
 import s from "../css/navbar.css"
+import Imagenes from "../css/img/imagenes";
 
 import { Link, animateScroll as scroll } from "react-scroll";
 
@@ -10,8 +11,8 @@ const Navbar = ()=>{
 
     return(
         <div className="containerNavbar" >
-            <div className="imgNavbar" onClick={scrollToTop}>
-                <p>Imagen del logo</p>
+            <div  onClick={scrollToTop}>
+                <img src={Imagenes.logoContactPoint} alt="imglogo" className="imgNavbar"></img>
             </div>
             <div className="navegators">
                 <Link 

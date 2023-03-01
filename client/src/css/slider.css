@@ -1,0 +1,10 @@
+
+.containerImgSlider{
+    display: flex;
+
+}
+
+.imgSlider{
+    width: 96vw;
+    height: 91vh;
+}
