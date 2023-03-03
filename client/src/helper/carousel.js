@@ -6,10 +6,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Pagination, Navigation } from "swiper";
-
+import { Autoplay,Pagination, Navigation } from "swiper";
 
 const Slider = ()=>{
+
 
     return(
        
@@ -18,11 +18,16 @@ const Slider = ()=>{
                     slidesPerView={1}
                     spaceBetween={30}
                     loop={true}
+                    speed={1000}
                     pagination={{
                     clickable: true,
                     }}
+                    autoplay={{
+                        delay: 3500,
+                        disableOnInteraction: false,
+                      }}
                     navigation={true}
-                    modules={[Pagination, Navigation]}
+                    modules={[Autoplay, Pagination, Navigation]}
                     className="mySwiper"
                 >
                     <SwiperSlide><img src={ImagenesCarrusel[0].name} alt="img" /></SwiperSlide>
