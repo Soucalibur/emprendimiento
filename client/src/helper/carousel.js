@@ -1,37 +1,39 @@
 import ImagenesCarrusel from "./imagesCarousel";
 import s from "../css/slider.css"
-import { useState } from "react";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { Pagination, Navigation } from "swiper";
+
 
 const Slider = ()=>{
 
-    const [number, setNumber] = useState(0)
-
-    
-
-    const nextImg = () =>{
-        setNumber(number === ImagenesCarrusel.length - 1 ? 0 : number + 1)
-    }
-    const previewImg = ()=>{
-        setNumber(number === 0 ? ImagenesCarrusel.length - 1 : number - 1)
-    }
-
-    if(ImagenesCarrusel.length === 0){
-        return
-    }
-
     return(
-        <div className="containerImgSlider">
+       
+            <div>
+                 <Swiper
+                    slidesPerView={1}
+                    spaceBetween={30}
+                    loop={true}
+                    pagination={{
+                    clickable: true,
+                    }}
+                    navigation={true}
+                    modules={[Pagination, Navigation]}
+                    className="mySwiper"
+                >
+                    <SwiperSlide><img src={ImagenesCarrusel[0].name} alt="img" /></SwiperSlide>
+                    <SwiperSlide><img src={ImagenesCarrusel[1].name} alt="img2" /></SwiperSlide>
+                    <SwiperSlide><img src={ImagenesCarrusel[2].name} alt="img3" /></SwiperSlide>
+                    
+                </Swiper>
+                
+
+            </div>
             
-            <button onClick={previewImg}>⮘</button>
-                {ImagenesCarrusel.map((img, index)=>{
-                    return(
-                        <div>
-                            {index === number? <img src={img.name} alt="img" className="imgSlider"></img> : ""}
-                        </div>
-                    )
-                })}
-            <button onClick={nextImg}>⮚</button>
-        </div>
     )
 }
 
