@@ -38,11 +38,38 @@
 
 .secondBlock{
     /* Properties */
-    
+    border: solid;
 
     /* Sizes */
     height: 20em;
 }
+
+#showOrHide{
+    /*duracion de la animacion, puedes variar el tiempo, entre mas grande mas tarda el efecto*/
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  /*le indicas que animacion quieres aplicarle, animacion hecha por ti en un keyframe*/
+  animation-name: fadeIn;
+  background-color: rgb(225, 225, 255);
+}
+
+#showOrHide2{
+    /*duracion de la animacion, puedes variar el tiempo, entre mas grande mas tarda el efecto*/
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  /*le indicas que animacion quieres aplicarle, animacion hecha por ti en un keyframe*/
+  animation-name: fadeIn;
+  background-color: rgb(225, 225, 255);
+}
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
 
 .thirdBlock{
     /* Properties */
