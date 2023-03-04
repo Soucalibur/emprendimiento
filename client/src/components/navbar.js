@@ -1,6 +1,5 @@
 import s from "../css/navbar.css"
 import Imagenes from "../css/img/imagenes";
-
 import { Link, animateScroll as scroll } from "react-scroll";
 
 const Navbar = ()=>{
@@ -8,6 +7,7 @@ const Navbar = ()=>{
     const scrollToTop = () => {
         scroll.scrollToTop(); 
     }
+    
 
     return(
         <div className="containerNavbar" >

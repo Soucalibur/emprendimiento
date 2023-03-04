@@ -4,13 +4,12 @@
 .containerNavbar{
     /* display */
     display: flex;
-    flex-wrap: wrap;
 
     /* Properties */
     justify-content: space-around;
     align-items: center;
-    background-color: blue;
-    color: aliceblue;
+    background-color: white;
+    box-shadow: 1px 5px 7px rgb(138, 138, 138);
     
     /* Sizes */
     height: 4em;
@@ -20,10 +19,7 @@
 
 .imgNavbar{
     /* Properties */
-    /* background-color: white; */
-    color: blue;
     cursor: pointer;
-    
 
     /* Sizes */
     width: 6em;
@@ -32,18 +28,23 @@
 
 .navegators{
     /* Properties */
+    padding: 6px;
     font-family:Arial, Helvetica, sans-serif;
     color: rgb(255, 0, 242);
     cursor: pointer;
-
+    
     /* Sizes */
     font-size: 1.2em;
     
 }
 
-.navegators > .active {
-   
-    color: antiquewhite;
+
+.navegators > .active p {
+    transition: 1.2s;
+    border-bottom: solid 1px rgb(225, 0, 255);
     
 }
+
+
+
 
