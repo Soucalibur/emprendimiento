@@ -44,13 +44,22 @@
     height: 20em;
 }
 
+.prueba{
+   /* Properties */
+   border: solid;
+   background-color: rgb(255, 115, 0);
+
+   /* Sizes */
+   height: 30em;
+   transition: 1s;
+}
+
 #showOrHide{
     /*duracion de la animacion, puedes variar el tiempo, entre mas grande mas tarda el efecto*/
   animation-duration: 2s;
   animation-fill-mode: both;
   /*le indicas que animacion quieres aplicarle, animacion hecha por ti en un keyframe*/
   animation-name: fadeIn;
-  background-color: rgb(225, 225, 255);
 }
 
 #showOrHide2{
@@ -59,7 +68,7 @@
   animation-fill-mode: both;
   /*le indicas que animacion quieres aplicarle, animacion hecha por ti en un keyframe*/
   animation-name: fadeIn;
-  background-color: rgb(225, 225, 255);
+  
 }
 @keyframes fadeIn {
     0% {
@@ -76,7 +85,7 @@
     
 
     /* Sizes */
-    height: 30em;
+    height: 20em;
 }
 
 .fourthBlock{
@@ -87,3 +96,30 @@
     /* Sizes */
     height: 10em;
 }
+
+.imgLogoWsp{
+
+  /* Properties */
+  position: fixed;
+  cursor: pointer;
+  background-image: url(./img/whatsappLogo.png);
+  background-size: cover;
+  
+  /* Sizes */
+  z-index: 1;
+  bottom:0;
+  right: 0;
+  height: 5em;
+  width: 5em;
+  margin-bottom: 3em;
+  margin-right: 3em;
+  transition: .7s;
+}
+.imgLogoWsp:hover{
+  background-image: url(./img/clickToChat.png);
+  height: 15em;
+  width: 15em;
+  margin-bottom: -1em;
+  margin-right: 1em;
+}
+

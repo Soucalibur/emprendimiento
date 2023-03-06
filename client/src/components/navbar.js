@@ -43,7 +43,7 @@ const Navbar = ()=>{
                     spy={true}
                     activeClass="active"
                     offset={-64}>
-                    <p>Contactenos</p>
+                    <p>Contacto</p>
                 </Link>
             </div>
         </div>
