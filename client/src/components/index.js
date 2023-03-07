@@ -48,8 +48,26 @@ const Index = ()=>{
             
             <div className="fourthBlock">
                 <h3>Informacion de los que pertenecen a la página</h3>
-                <p>Desarrollo web: Matthew Gallar</p>
-                <p>Marketing y publicidad: Tobias Porcel</p>
+                <div className="footerDW">
+                    <div>
+                        <p style={{"padding":"10px"}}>Desarrollo web </p>
+                    </div>
+                    <div>
+                        <p>Matthew Gallar</p>
+                    </div>
+                    <div>
+                        <a href="https://www.linkedin.com/in/matthewfullstack/" target="_blank" rel="noopener noreferrer">
+                            <div className="imgLogoLinkedIn1"></div>
+                        </a>
+                    </div>
+                </div>
+                <div className="footerMP">
+
+                    <p style={{"padding":"10px"}}>Marketing y publicidad </p>
+                    <p>Tobias Porcel</p>
+                    
+
+                </div>
             </div>
 
             <div>

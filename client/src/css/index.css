@@ -89,12 +89,42 @@
 }
 
 .fourthBlock{
-    /* Properties */
-    background-color: black;
-    color: white;
+  
+  /* Display */
+  display: grid;
+  
+  /* Properties */
 
-    /* Sizes */
-    height: 10em;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(12, 1fr);
+  background-color: black;
+  color: white;
+
+  /* Sizes */
+  height: 10em;
+}
+.footerDW{
+  /* Position */
+  grid-column: 1;
+  grid-row: 2/11;
+  /* Properties */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+}
+
+.footerMP{
+  /* Position */
+  grid-column: 2;
+  grid-row: 2/11;
+  /* Properties */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* Sizes */
 }
 
 .imgLogoWsp{
@@ -104,22 +134,36 @@
   cursor: pointer;
   background-image: url(./img/whatsappLogo.png);
   background-size: cover;
+  transition: .7s;
   
-  /* Sizes */
+  /* Sizes and Positions */
+  height: 5em;
+  width: 5em;
   z-index: 1;
   bottom:0;
   right: 0;
-  height: 5em;
-  width: 5em;
   margin-bottom: 3em;
   margin-right: 3em;
-  transition: .7s;
 }
 .imgLogoWsp:hover{
+
+  /* Properties */
   background-image: url(./img/clickToChat.png);
+
+  /* Sizes and Positions */
   height: 15em;
   width: 15em;
   margin-bottom: -1em;
   margin-right: 1em;
+}
+
+.imgLogoLinkedIn1{
+  /* Properties */
+  background-image: url(./img/imgLogos/linkedInLogo.png);
+  background-size: cover;
+  /* Sizes and Positions */
+  height: 3em;
+  width: 3em;
+  
 }
 
