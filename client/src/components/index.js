@@ -35,9 +35,10 @@ const Index = ()=>{
             </div>
 
             <div className="secondBlock" id="servicios" >
-                <h3>Servicios</h3>
-                <button onClick={show_hide}  value="showOrHide secondBlock">Mas informacion para agregar acaaaaa</button>
+                <h3 className="nameSecondBlock">Servicios</h3>
+                <button onClick={show_hide}  value="showOrHide secondBlock" className="buttonSecondBlock">Mas informacion para agregar acaaaaa</button>
                 <p id="showOrHide" hidden> informacion extra que deberia mostrarte u ocultarse a medida que se ven los demas</p>
+                <img src={Imagenes.imagenServicios} alt="imgserv" className="imgServiciosSecondBlock"></img>
             </div>
 
             <div className="thirdBlock"  id="contacto" >
@@ -47,24 +48,39 @@ const Index = ()=>{
             </div>
             
             <div className="fourthBlock">
-                <h3>Informacion de los que pertenecen a la página</h3>
+                <h3 className="titleFooter">Contact Point</h3>
                 <div className="footerDW">
-                    <div>
-                        <p style={{"padding":"10px"}}>Desarrollo web </p>
-                    </div>
-                    <div>
-                        <p>Matthew Gallar</p>
-                    </div>
-                    <div>
+                    
+                    <p style={{"padding":"10px"}}>Desarrollo web </p>
+                    <p>Matthew Gallar</p>
+                    
+                    <div className="containerLogosFooter">
                         <a href="https://www.linkedin.com/in/matthewfullstack/" target="_blank" rel="noopener noreferrer">
-                            <div className="imgLogoLinkedIn1"></div>
+                            <img className="imgLogo" src={Imagenes.logoLinkedIn} alt="linkedinimg"></img>
+                        </a>
+                        <a href="https://github.com/Soucalibur" target="_blank" rel="noopener noreferrer" >
+                            <img className="imgLogo" src={Imagenes.logoGithub} alt="githubimg"></img>
+                        </a>
+                        <a href="https://portfolio-pbhoz3dhf-soucalibur.vercel.app/" target="_blank" rel="noopener noreferrer">
+                            <img className="imgLogo" src={Imagenes.logoPortfolio} alt="githubimg"></img>
                         </a>
                     </div>
                 </div>
                 <div className="footerMP">
 
+
                     <p style={{"padding":"10px"}}>Marketing y publicidad </p>
                     <p>Tobias Porcel</p>
+
+
+                    <div className="containerLogosFooter">
+                        <a href="https://www.linkedin.com/in/matthewfullstack/" target="_blank" rel="noopener noreferrer">
+                            <img className="imgLogo" src={Imagenes.logoLinkedIn} alt="linkedinimg"></img>
+                        </a>
+                        <a href="https://portfolio-pbhoz3dhf-soucalibur.vercel.app/" target="_blank" rel="noopener noreferrer">
+                            <img className="imgLogo" src={Imagenes.logoInstagram} alt="githubimg"></img>
+                        </a>
+                    </div>
                     
 
                 </div>
