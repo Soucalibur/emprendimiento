@@ -35,86 +35,164 @@
     /* Sizes */
     height: 91vh;
 }
+/* ---------------------------------------------------- */
 
-.secondBlock{
+/* Segundo bloque antes */
 
+.secondBlockFirst{
   /* Display */
   display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 19.5em;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 20em;
 
   /* Properties */
-    border: solid;
+  border: solid;
 
   /* Sizes */
-    height: 20em;
+  height: 20em;
 }
 
-.prueba{
-   /* Properties */
-   border: solid;
-   background-color: rgb(255, 115, 0);
-
-   /* Sizes */
-   height: 30em;
-   transition: 1s;
+.dontShowItFirst{
+  /* Properties */
+  opacity: 0;
 }
 
-#showOrHide{
-    /*duracion de la animacion, puedes variar el tiempo, entre mas grande mas tarda el efecto*/
-  animation-duration: 2s;
-  animation-fill-mode: both;
-  /*le indicas que animacion quieres aplicarle, animacion hecha por ti en un keyframe*/
-  animation-name: fadeIn;
-}
+.showedFirst{
+  /* Display */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 20em;
 
-#showOrHide2{
-    /*duracion de la animacion, puedes variar el tiempo, entre mas grande mas tarda el efecto*/
-  animation-duration: 2s;
-  animation-fill-mode: both;
-  /*le indicas que animacion quieres aplicarle, animacion hecha por ti en un keyframe*/
-  animation-name: fadeIn;
-  
-}
-@keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-.nameSecondBlock{
-  grid-column: 1/3;
-  grid-row: 1;
-  z-index: 1;
-  text-align: center;
-}
-.buttonSecondBlock{
-  grid-column: 1/2;
+  /* Position */
+  grid-column: 1/5;
   grid-row: 1/2;
+
+  transition: 1s;
+
+}
+
+.buttonSecondBlock{
+  /* Positions */
+  grid-column: 1/5;
+  grid-row: 1/2;
+  z-index: 1;
+  margin-left: 10em;
+  text-align: start;
+
+  /* Properties */
+  border: none;
+  background:none;
+  height: max-content;
+  cursor: pointer;
   
-  height: 5em;
+  /* Sizes */
+  width: 100%;
+  height: 100%;  
 }
 
 .imgServiciosSecondBlock{
 
-  grid-column: 2/3;
+  /* Positions */
+  grid-column: 2/5;
   grid-row: 1/2;
-  width: 20em;
-  
-  margin: 0;
+
+  /* Sizes */
+  width: 100%;
+  height: 99%;
+
+  /* Properties */
+  background-color: blue;
+  margin-bottom: auto;
+  object-fit: cover;
+  clip-path: polygon(21% 0, 100% 0%, 100% 100%, 0% 100%);
+  opacity: 0.5;
   
 }
 
+/* Segundo bloque despues */
 
+.secondBlockSecond{
+  /* Display */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 20em 20em;
 
+  /* Properties */
+    border: solid;
+    transition: 1s;
+
+  /* Sizes */
+    height: 40em;
+}
+
+.showedSecond{
+  /* Display */
+  display: flex;
+
+  /* Position */
+  grid-column: 1/5;
+  grid-row: 1/3;
+
+  /* Properties */
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+#showInfo{
+
+  /* Positions */
+  grid-column: 1/3;
+  grid-row: 2/3;
+
+  /* Properties */
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+.dontShowIt{
+  /* Display */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 20em;
+
+  /* Position */
+  grid-column: 1/5;
+  grid-row: 1/2;
+  
+  /* Properties */
+  animation-name: fadeOut;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+
+/* ------------------------------------- */
+
+.prueba{
+  /* Properties */
+  border: solid;
+  background-color: rgb(255, 115, 0);
+
+  /* Sizes */
+  height: 30em;
+  transition: 1s;
+}
 .thirdBlock{
     /* Properties */
     
 
     /* Sizes */
     height: 20em;
+}
+
+#showOrHide2{
+  /*duracion de la animacion, puedes variar el tiempo, entre mas grande mas tarda el efecto*/
+animation-duration: 2s;
+animation-fill-mode: both;
+/*le indicas que animacion quieres aplicarle, animacion hecha por ti en un keyframe*/
+animation-name: fadeIn;
+
 }
 
 .fourthBlock{
@@ -213,4 +291,23 @@
   width: 15em;
   margin-bottom: -1em;
   margin-right: 1em;
+}
+
+
+/* Animaciones */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }

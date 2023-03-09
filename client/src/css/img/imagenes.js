@@ -6,7 +6,7 @@ const Imagenes = {
     logoGithub: require("./imgLogos/githubLogo.png"),
     logoPortfolio: require("./imgLogos/portfolioLogo.png"),
     logoInstagram: require("./imgLogos/instagramLogo.png"),
-    imagenServicios: require("./imgServicios/Servicios.png")
+    imagenServicios: require("./imgServicios/Servicios.jpg")
 }
 
 export default Imagenes

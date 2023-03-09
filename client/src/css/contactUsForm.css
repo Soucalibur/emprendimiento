@@ -1,0 +1,37 @@
+
+.containerForm{
+    /* Display */
+    display: flex;
+
+    /* Properties */
+    flex-wrap: wrap;
+
+    flex-direction: column;
+    align-items: center;
+}
+.tituloForm{
+    padding: 7px;
+}
+.inputNameForm, .inputEmailForm, .inputSubjectForm, .inputMessageForm{
+    width: 20em;
+    margin-top: 20px;
+}
+
+.inputMessageForm{
+    position: absolute;
+    height: 10em;
+    margin-top: 175px;
+}
+
+
+.errorInfo, #sendButtom{
+    display: flex;
+    margin-left: 60%;
+    gap: 5px;    
+}
+.errorInfo{
+    background: rgb(243, 215, 156);
+}
+#sendButtom{
+    margin-top: 10px;
+}

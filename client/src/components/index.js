@@ -3,6 +3,7 @@ import Navbar from "./navbar"
 import LenisFunction from "../helper/lenis"
 import Slider from "../helper/carousel"
 import Imagenes from "../css/img/imagenes"
+import ContactUsForm from "../helper/contactUsForm"
 import { Link } from "react-scroll"
 
 const Index = ()=>{
@@ -11,14 +12,15 @@ const Index = ()=>{
 
     const show_hide = (event)=>{
         const value = event.target.value.split(" ")
-        console.log(value)
-        const element = document.getElementById(value[0])
-        console.log(element)
-        const elemento2 = document.getElementsByClassName(value[1])
-        console.log(elemento2)
-        if(element.hidden === true){
-            element.hidden = false
-            elemento2[0].className = "prueba"
+        const elementShowedFirst = document.getElementsByClassName(value[0])
+        const elementDontShowItFirst = document.getElementsByClassName(value[1])
+        const elementSecondBlockFirst = document.getElementsByClassName(value[2])
+        console.log("elemento 2: ", value)
+        if(elementShowedFirst[0].hidden === false){
+            elementShowedFirst[0].className = "dontShowIt"
+            elementDontShowItFirst[0].hidden = false
+            elementDontShowItFirst[0].className = "showedSecond"
+            elementSecondBlockFirst[0].className = "secondBlockSecond"
         }
         
     }
@@ -34,17 +36,20 @@ const Index = ()=>{
 
             </div>
 
-            <div className="secondBlock" id="servicios" >
-                <h3 className="nameSecondBlock">Servicios</h3>
-                <button onClick={show_hide}  value="showOrHide secondBlock" className="buttonSecondBlock">Mas informacion para agregar acaaaaa</button>
-                <p id="showOrHide" hidden> informacion extra que deberia mostrarte u ocultarse a medida que se ven los demas</p>
-                <img src={Imagenes.imagenServicios} alt="imgserv" className="imgServiciosSecondBlock"></img>
+            <div className="secondBlockFirst" >
+                <div className="showedFirst">
+                    <button onClick={show_hide}  value="showedFirst dontShowItFirst secondBlockFirst" className="buttonSecondBlock">Servicios</button>
+                    <img src={Imagenes.imagenServicios} alt="imgserv" className="imgServiciosSecondBlock"></img>
+                </div>
+                <div className="dontShowItFirst" hidden>
+                    <p id="showInfo"> informacion extra que deberia mostrarte u ocultarse a medida que se ven los demas</p>
+                </div>
             </div>
 
             <div className="thirdBlock"  id="contacto" >
-                <h3>Contacto</h3>
-                <button onClick={show_hide}  value="showOrHide2 thirdBlock">Mas informacion para agregar</button>
-                <p id="showOrHide2" hidden>Quizas esto no sea necesario ocultarlo en una primera intancia pero ya se verá</p>
+                <div>
+                    <ContactUsForm></ContactUsForm>
+                </div>
             </div>
             
             <div className="fourthBlock">
