@@ -1,5 +1,7 @@
 import { useState } from "react"
+import { useRef } from "react"
 import s from "../css/contactUsForm.css"
+import EmailJS from "./emailJS"
 
 const Validate = (input)=>{
     let error = {}
@@ -29,6 +31,8 @@ const Validate = (input)=>{
 
 const ContactUsForm = ()=>{
 
+    const form = useRef()
+
     const [input, setInput] = useState({
         name: "",
         email: "",
@@ -48,13 +52,14 @@ const ContactUsForm = ()=>{
     const sendData = (event)=>{
         event.preventDefault()
         if(!Object.entries(error).length){
+            EmailJS(form)
             console.log("MENSAJE ENVIADO")
         }
     }
 
     return(
         <div >
-            <form onSubmit={sendData} className="containerForm">
+            <form ref={form} onSubmit={sendData} className="containerForm">
                 <h3 className="tituloForm">Contactenos</h3>
                 <input
                     name="name"

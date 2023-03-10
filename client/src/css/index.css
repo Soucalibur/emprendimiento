@@ -76,13 +76,11 @@
   grid-column: 1/5;
   grid-row: 1/2;
   z-index: 1;
-  margin-left: 10em;
   text-align: start;
 
   /* Properties */
   border: none;
   background:none;
-  height: max-content;
   cursor: pointer;
   
   /* Sizes */
@@ -102,7 +100,6 @@
 
   /* Properties */
   background-color: blue;
-  margin-bottom: auto;
   object-fit: cover;
   clip-path: polygon(21% 0, 100% 0%, 100% 100%, 0% 100%);
   opacity: 0.5;

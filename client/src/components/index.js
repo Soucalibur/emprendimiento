@@ -36,7 +36,7 @@ const Index = ()=>{
 
             </div>
 
-            <div className="secondBlockFirst" >
+            <div className="secondBlockFirst" id="servicios">
                 <div className="showedFirst">
                     <button onClick={show_hide}  value="showedFirst dontShowItFirst secondBlockFirst" className="buttonSecondBlock">Servicios</button>
                     <img src={Imagenes.imagenServicios} alt="imgserv" className="imgServiciosSecondBlock"></img>

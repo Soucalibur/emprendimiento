@@ -6,8 +6,6 @@ function App() {
   return (
     <div className="App">
       <Route path="/" component={Index}></Route>
-      {/* <Route path="/" component={Navbar}></Route> */}
-
     </div>
   );
 }
