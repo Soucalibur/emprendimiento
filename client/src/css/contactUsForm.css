@@ -11,27 +11,71 @@
 }
 .tituloForm{
     padding: 7px;
+    margin-top: 30px;
+    font-size: 1.7em;
+    color: rgb(255, 0, 242);
 }
 .inputNameForm, .inputEmailForm, .inputSubjectForm, .inputMessageForm{
     width: 20em;
+    height: 3em;
     margin-top: 20px;
+    border-radius: 5px;
+    background-color: rgba(243, 243, 243, 0.466);
+    border: rgb(255, 0, 242) 1px solid;
+    color: rgb(255, 0, 242);
+    padding: 5px;
+}
+
+.inputNameForm:focus, .inputEmailForm:focus, .inputSubjectForm:focus, .inputMessageForm:focus{
+    outline: none;
+    border: rgb(255, 0, 242) 2px solid;
+    box-shadow: 1px 1px 12px pink;
 }
 
 .inputMessageForm{
     position: absolute;
     height: 10em;
-    margin-top: 175px;
+    margin-top: 280px;
+    
 }
 
 
 .errorInfo, #sendButtom{
     display: flex;
-    margin-left: 60%;
+    margin-left: 60vw;
     gap: 5px;    
 }
+
 .errorInfo{
-    background: rgb(243, 215, 156);
+   position: absolute;
+    box-shadow: 1px 1px 10px pink;
+    background: rgb(255, 0, 242);
+    color: white;
+    border-radius: 30px;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 180px;
 }
-#sendButtom{
-    margin-top: 10px;
+#sendButtom:enabled{
+    border-radius: 30px;
+    padding: 10px;
+    box-shadow: 1px 1px 20px pink;
+    background: rgb(255, 0, 242);
+    color: white;
+    border: none;
+}
+#sendButtom:enabled:hover{
+    background: rgb(255, 97, 247);
+    cursor: pointer;
+}
+#sendButtom:enabled:active{
+    background: rgb(196, 65, 187);
+    cursor: pointer;
+    
+    
+}
+#sendButtom:disabled{
+    
+    padding: 10px;
+    border-radius: 30px;
 }

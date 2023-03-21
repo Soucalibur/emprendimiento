@@ -1,7 +1,7 @@
 import Imagenes from "../css/img/imagenes"
 import s from "../css/index.css"
 
-const SecondBlock = ()=>{
+const Servicios = ()=>{
 
     const show_hide = (event)=>{
         const value = event.target.value.split(" ")
@@ -21,7 +21,9 @@ const SecondBlock = ()=>{
     return(
         <div className="secondBlockFirst" id="servicios">
             <div className="showedFirst">
-                    <button onClick={show_hide}  value="showedFirst dontShowItFirst secondBlockFirst" className="buttonSecondBlock">Servicios</button>
+                    <button onClick={show_hide}  value="showedFirst dontShowItFirst secondBlockFirst" className="buttonSecondBlock">
+                    </button>
+                    <h3 className="nombreBotonServicios">Servicios</h3>
                     <img src={Imagenes.imagenServicios} alt="imgserv" className="imgServiciosSecondBlock"></img>
                 </div>
                 <div className="dontShowItFirst" hidden>
@@ -31,4 +33,4 @@ const SecondBlock = ()=>{
     )
 }
 
-export default SecondBlock
+export default Servicios

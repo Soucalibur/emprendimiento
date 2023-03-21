@@ -8,7 +8,7 @@ const Validate = (input)=>{
     let regexEmail = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
 
 	if (!input.name || input.name?.trim() >= 1) {
-		error.name = 'Introduzca un nombre';
+		error.name = 'Introduzca su nombre';
 	} else if (!regexEmail.test(input.email)) {
 		error.email = 'Introduzca un email válido';
 	} else if (!input.subject) {
@@ -57,6 +57,8 @@ const ContactUsForm = ()=>{
         }
     }
 
+    
+
     return(
         
         <div className="thirdBlock"  id="contacto" >
@@ -66,7 +68,7 @@ const ContactUsForm = ()=>{
                     name="name"
                     value={input.name}
                     onChange={introduceData}
-                    placeholder="NOMBRE"
+                    placeholder="*NOMBRE"
                     autoComplete="off" 
                     className="inputNameForm"
                 ></input>
@@ -76,21 +78,23 @@ const ContactUsForm = ()=>{
                     value={input.email} 
                     onChange={introduceData}
                     autoComplete='off'
-                    placeholder="EMAIL"
+                    placeholder="*CORREO"
                     className="inputEmailForm"
                 />
+                
+                
 
                 <input 
                     name="subject" 
                     value={input.subject} 
                     onChange={introduceData}
                     autoComplete='off'
-                    placeholder="SERVICIO" 
+                    placeholder="*SERVICIO" 
                     className="inputSubjectForm"
-                />
-                <div className="errorInfo">
-                    {error ? <p>{error.name || error.email || error.subject || error.message}</p> : ""}
-                </div>
+                    />
+                
+                {error && Object.entries(error).length ? <p className="errorInfo">{error.name || error.email || error.subject || error.message}</p> : ""}
+                
                 <button type="submit" id="sendButtom" disabled> ENVIAR MENSAJE</button>
 
                 <textarea 
@@ -98,7 +102,7 @@ const ContactUsForm = ()=>{
                     value={input.message} 
                     onChange={introduceData} 
                     autoComplete='off'
-                    placeholder="MENSAJE"
+                    placeholder="*MENSAJE"
                     className="inputMessageForm"
                 />
             </form>

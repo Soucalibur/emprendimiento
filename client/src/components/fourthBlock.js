@@ -1,7 +1,7 @@
 import Imagenes from "../css/img/imagenes"
 import s from "../css/index.css"
 
-const FourthBlock = () =>{
+const Footer = () =>{
 
     return(
         <div className="fourthBlock">
@@ -45,4 +45,4 @@ const FourthBlock = () =>{
     )
 }
 
-export default FourthBlock
+export default Footer

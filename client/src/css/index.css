@@ -9,6 +9,31 @@
 
 /* Página principal */
 
+/* Primer Div: Cargando pantalla */
+
+#primerDiv{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.imgLoading{
+  
+  width: 25%;
+  height: 20%;
+  animation: girar 2s linear infinite;
+  transform-style: preserve-3d
+}
+
+@keyframes girar {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+
 /* Contenedor Principal */
 .containerIndex{
     /* display */
@@ -75,8 +100,7 @@
   /* Positions */
   grid-column: 1/5;
   grid-row: 1/2;
-  z-index: 1;
-  text-align: start;
+  z-index: 2;
 
   /* Properties */
   border: none;
@@ -86,6 +110,18 @@
   /* Sizes */
   width: 100%;
   height: 100%;  
+}
+
+.nombreBotonServicios{
+  
+  /* Positions */
+  position: absolute;
+  margin-top: 5em;
+  margin-left: 3.5em;
+
+  /* Properties */
+  color: rgb(255, 0, 242);
+  font-size: 1.7em; 
 }
 
 .imgServiciosSecondBlock{
@@ -175,22 +211,19 @@
   height: 30em;
   transition: 1s;
 }
+
+/* Tercer Bloque */
 .thirdBlock{
     /* Properties */
-    
+    display: flex;
+    justify-content: center;
 
     /* Sizes */
-    height: 20em;
+    height: 30em;
 }
 
-#showOrHide2{
-  /*duracion de la animacion, puedes variar el tiempo, entre mas grande mas tarda el efecto*/
-animation-duration: 2s;
-animation-fill-mode: both;
-/*le indicas que animacion quieres aplicarle, animacion hecha por ti en un keyframe*/
-animation-name: fadeIn;
+/* ------------------------------------- */
 
-}
 
 .fourthBlock{
   
