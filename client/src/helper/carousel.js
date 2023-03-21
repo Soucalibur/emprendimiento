@@ -12,8 +12,8 @@ const Slider = ()=>{
 
 
     return(
-       
-            <div>
+        
+            <div className="firstBlock" id="nosotros">
                  <Swiper
                     slidesPerView={1}
                     spaceBetween={30}

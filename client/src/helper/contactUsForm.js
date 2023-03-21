@@ -58,7 +58,8 @@ const ContactUsForm = ()=>{
     }
 
     return(
-        <div >
+        
+        <div className="thirdBlock"  id="contacto" >
             <form ref={form} onSubmit={sendData} className="containerForm">
                 <h3 className="tituloForm">Contactenos</h3>
                 <input
