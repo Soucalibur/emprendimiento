@@ -1,5 +1,6 @@
 import s from "../css/navbar.css"
 import Imagenes from "../css/img/imagenes";
+
 import { Link, animateScroll as scroll } from "react-scroll";
 
 const Navbar = ()=>{
@@ -7,6 +8,7 @@ const Navbar = ()=>{
     const scrollToTop = () => {
         scroll.scrollToTop(); 
     }
+    
     
 
     return(
@@ -17,8 +19,9 @@ const Navbar = ()=>{
                 </div>
                 <div className="navegators">
                     <Link 
-                        to="nosotros"
-                        smooth="true"
+                        to="sobreNosotros"
+                        smooth="easeInOutQuart"
+                        duration="1200"
                         spy={true}
                         activeClass="active"
                         offset={-64}
@@ -29,10 +32,12 @@ const Navbar = ()=>{
                 <div className="navegators">
                     <Link 
                         to="servicios"
-                        smooth="true"
+                        smooth="easeInOutQuart"
+                        duration="1200"
                         spy={true}
                         activeClass= "active"
-                        offset={-64}>
+                        offset={-64}
+                        >
                         <p>Servicios</p>
                     </Link>
                     
@@ -40,10 +45,12 @@ const Navbar = ()=>{
                 <div className="navegators">
                     <Link 
                         to="contacto"
-                        smooth="true"
+                        smooth="easeInOutQuart"
+                        duration="1200"
                         spy={true}
                         activeClass="active"
-                        offset={-64}>
+                        offset={-64}
+                        >
                         <p>Contacto</p>
                     </Link>
                 </div>

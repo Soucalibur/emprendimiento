@@ -1,10 +1,12 @@
-import s from "../css/index.css"
 import Navbar from "./navbar"
-import LenisFunction from "../helper/lenis"
 import Slider from "../helper/carousel"
+import SobreNosotros from "./sobreNosotros"
+import Servicios from "./servicios"
 import ContactUsForm from "../helper/contactUsForm"
-import Servicios from "./secondBlock"
-import Footer from "./fourthBlock"
+import Footer from "./footer"
+
+import s from "../css/index.css"
+import LenisFunction from "../helper/lenis"
 import WspLink from "../helper/wspLink"
 import Imagenes from "../css/img/imagenes"
 
@@ -28,6 +30,7 @@ const Index = ()=>{
             <div id="segundoDiv" hidden={true}>
                 <Navbar/>
                 <Slider/>
+                <SobreNosotros/>
                 <Servicios/>
                 <ContactUsForm/>
                 <Footer/>

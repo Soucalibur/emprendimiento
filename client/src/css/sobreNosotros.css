@@ -1,0 +1,167 @@
+/* ---------------------------------------------------- */
+
+/* Sobre nosotros */
+
+.bloqueSobreNosotros{
+    /* Display */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 20em;
+  
+    /* Properties */
+    border: solid;
+  
+    /* Sizes */
+    height: 20em;
+  }
+  
+  .noMostrarPrimeroSN{
+    /* Properties */
+    opacity: 0;
+  }
+  
+  .mostrarPrimeroSN{
+    /* Display */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 20em;
+  
+    /* Position */
+    grid-column: 1/5;
+    grid-row: 1/2;
+  
+    transition: 1s;
+  
+  }
+  
+  .buttonSecondBlock{
+    /* Positions */
+    grid-column: 1/5;
+    grid-row: 1/2;
+    z-index: 2;
+  
+    /* Properties */
+    border: none;
+    background:none;
+    cursor: pointer;
+    z-index: 1;
+    
+    /* Sizes */
+    width: 100%;
+    height: 100%;  
+  }
+  
+  .nombreBotonSN{
+    
+    /* Positions */
+    position: absolute;
+    margin-top: 5em;
+    margin-left: 3.5em;
+  
+    /* Properties */
+    color: rgb(255, 0, 242);
+    font-size: 1.7em; 
+  }
+  
+  .imgServiciosSecondBlock{
+  
+    /* Positions */
+    grid-column: 2/5;
+    grid-row: 1/2;
+  
+    /* Sizes */
+    width: 100%;
+    height: 99%;
+  
+    /* Properties */
+    background-color: blue;
+    object-fit: cover;
+    clip-path: polygon(21% 0, 100% 0%, 100% 100%, 0% 100%);
+    opacity: 0.5;
+    
+  }
+  
+  /* Segundo bloque despues */
+  
+  .segundoBlockSN{
+    /* Display */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 20em 20em;
+  
+    /* Properties */
+      border: solid;
+      transition: 1s;
+  
+    /* Sizes */
+      height: 25em;
+  }
+  
+  .mostrarSegundoSN{
+    /* Display */
+    display: flex;
+  
+    /* Position */
+    grid-column: 1/5;
+    grid-row: 1/3;
+  
+    /* Properties */
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+  }
+
+  .nombreBotonSN{
+    /* Positions */
+    position: absolute;
+    margin-top: 5em;
+    margin-left: 3.5em;
+  
+    /* Properties */
+    color: rgb(255, 0, 242);
+    font-size: 1.7em; 
+  }
+  .nombreSegundoBotonSN{
+    /* Positions */
+    position: absolute;
+    margin-top: 5em;
+    margin-left: 3.5em;
+
+    /* Properties */
+    color: rgb(255, 0, 242);
+    font-size: 2em; 
+    transition: 1s;
+}
+  
+  .informacion{
+  
+    /* Properties */
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    color: rgb(255, 0, 242);
+    font-size: 1.2em; 
+    text-align:justify;
+    margin-top: 7%;
+    margin-left: 60%;
+    margin-right: 10%;
+  }
+  
+  .dontShowIt{
+    /* Display */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 20em;
+  
+    /* Position */
+    grid-column: 1/5;
+    grid-row: 1/2;
+    
+    /* Properties */
+    animation-name: fadeOut;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+  }
+  
+  
+  /* ------------------------------------- */
