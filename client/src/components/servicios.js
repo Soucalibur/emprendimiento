@@ -8,14 +8,15 @@ const Servicios = ()=>{
         const elementShowedFirst = document.getElementsByClassName(value[0])
         const elementDontShowItFirst = document.getElementsByClassName(value[1])
         const elementSecondBlockFirst = document.getElementsByClassName(value[2])
-        const elementoNombreBotonServicios = document.getElementsByClassName(value[3])
+        const elementoNombreBotonServicios = document.getElementById(value[3])
 
         if(elementShowedFirst[0].hidden === false){
             elementShowedFirst[0].className = "dontShowIt"
             elementDontShowItFirst[0].hidden = false
             elementDontShowItFirst[0].className = "showedSecond"
             elementSecondBlockFirst[0].className = "secondBlockSecond"
-            elementoNombreBotonServicios[0].className = "nombreSegundoBotonServicios"
+            document.getElementsByClassName("nombreSegundoBotonServicios")[0].hidden = false
+            elementoNombreBotonServicios.style.display = "none"
         }
         
     }
@@ -24,15 +25,17 @@ const Servicios = ()=>{
         <div className="secondBlockFirst" id="servicios">
 
             <div className="showedFirst">
-                <button onClick={show_hide}  value="showedFirst dontShowItFirst secondBlockFirst nombreBotonServicios" className="buttonSecondBlock"></button>
+                <h3 className="nombreBotonServicios">Servicios</h3>
+                <button onClick={show_hide}  value="showedFirst dontShowItFirst secondBlockFirst botonServicios" className="buttonSecondBlock" id="botonServicios"></button>
                 <img src={Imagenes.imagenServicios} alt="imgserv" className="imgServiciosSecondBlock"></img>
             </div>
 
-            <h3 className="nombreBotonServicios">Servicios</h3>
+            <h3 className="nombreSegundoBotonServicios" hidden>Servicios</h3>
 
             <div className="dontShowItFirst" hidden>
-    
+            
                 <div className="MarketingServicios">
+                    <img src={Imagenes.tarjetaMarketing} alt="imgprueba" className="imgServicios"></img>
                     <div className="títuloServicios">
                         <h3>Marketing</h3>
                     </div>
@@ -41,10 +44,10 @@ const Servicios = ()=>{
                         <h4>Posicionamiento de marcas</h4>
                         <h4>Estrategias de comercialización</h4>
                     </div>
-                    {/* <img src={Imagenes.imagenServiciosPrueba} alt="imgprueba" className="imgServicios"></img> */}
                 </div>
 
                 <div className="PublicidadServicios">
+                    <img src={Imagenes.tarjetaPublicidad} alt="imgprueba" className="imgServicios"></img>
                     <div className="títuloServicios">
                         <h3>Publicidad</h3>
                     </div>
@@ -53,10 +56,10 @@ const Servicios = ()=>{
                         <h4>Gestión de redes sociales</h4>
                         <h4>Publicidad en redes sociales</h4>
                     </div>
-                    {/* <img src={Imagenes.imagenServiciosPrueba} alt="imgprueba" className="imgServicios"></img> */}
                 </div>
 
                 <div className="DiseñoGráficoServicios">
+                    <img src={Imagenes.tarjetaDiseñoGrafico} alt="imgprueba" className="imgServicios"></img>
                     <div className="títuloServicios">
                         <h3>Diseño Gráfico</h3>
                     </div>
@@ -65,10 +68,10 @@ const Servicios = ()=>{
                         <h4>Diseños publicitarios</h4>
                         <h4>Diseños de cartelería, flyers</h4>
                     </div>
-                    {/* <img src={Imagenes.imagenServiciosPrueba} alt="imgprueba" className="imgServicios"></img> */}
                 </div>
 
                 <div className="FotografíaVideoServicios">
+                    <img src={Imagenes.tarjetaFotografia} alt="imgprueba" className="imgServicios"></img>
                     <div className="títuloServicios">
                         <h3>Fotografía</h3>
                     </div>
@@ -77,10 +80,10 @@ const Servicios = ()=>{
                         <h4>Fotografía de eventos</h4>
                         <h4>Fotografía publicitaria</h4>
                     </div>
-                    {/* <img src={Imagenes.imagenServiciosPrueba} alt="imgprueba" className="imgServicios"></img> */}
                 </div>
 
                 <div className="DesarrolloWebServicios">
+                    <img src={Imagenes.tarjetaDesarrolloWeb} alt="imgprueba" className="imgServicios"></img>
                     <div className="títuloServicios">
                         <h3>Desarrollo Web</h3>
                     </div>
@@ -91,7 +94,6 @@ const Servicios = ()=>{
                         <h4>E-Commerce</h4>
                         <h4>Mantenimiento y service</h4>
                     </div>
-                    {/* <img src={Imagenes.imagenServiciosPrueba} alt="imgprueba" className="imgServicios"></img> */}
                 </div>
             </div>
         </div>
