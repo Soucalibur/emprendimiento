@@ -31,7 +31,7 @@ const Servicios = ()=>{
             <h3 className="nombreBotonServicios">Servicios</h3>
 
             <div className="dontShowItFirst" hidden>
-
+    
                 <div className="MarketingServicios">
                     <div className="títuloServicios">
                         <h3>Marketing</h3>
@@ -41,7 +41,7 @@ const Servicios = ()=>{
                         <h4>Posicionamiento de marcas</h4>
                         <h4>Estrategias de comercialización</h4>
                     </div>
-                    <img src={Imagenes.imagenServiciosPrueba} alt="imgprueba" className="imgServicios"></img>
+                    {/* <img src={Imagenes.imagenServiciosPrueba} alt="imgprueba" className="imgServicios"></img> */}
                 </div>
 
                 <div className="PublicidadServicios">
@@ -53,7 +53,7 @@ const Servicios = ()=>{
                         <h4>Gestión de redes sociales</h4>
                         <h4>Publicidad en redes sociales</h4>
                     </div>
-                    <img src={Imagenes.imagenServiciosPrueba} alt="imgprueba" className="imgServicios"></img>
+                    {/* <img src={Imagenes.imagenServiciosPrueba} alt="imgprueba" className="imgServicios"></img> */}
                 </div>
 
                 <div className="DiseñoGráficoServicios">
@@ -65,7 +65,7 @@ const Servicios = ()=>{
                         <h4>Diseños publicitarios</h4>
                         <h4>Diseños de cartelería, flyers</h4>
                     </div>
-                    <img src={Imagenes.imagenServiciosPrueba} alt="imgprueba" className="imgServicios"></img>
+                    {/* <img src={Imagenes.imagenServiciosPrueba} alt="imgprueba" className="imgServicios"></img> */}
                 </div>
 
                 <div className="FotografíaVideoServicios">
@@ -77,7 +77,7 @@ const Servicios = ()=>{
                         <h4>Fotografía de eventos</h4>
                         <h4>Fotografía publicitaria</h4>
                     </div>
-                    <img src={Imagenes.imagenServiciosPrueba} alt="imgprueba" className="imgServicios"></img>
+                    {/* <img src={Imagenes.imagenServiciosPrueba} alt="imgprueba" className="imgServicios"></img> */}
                 </div>
 
                 <div className="DesarrolloWebServicios">
@@ -85,12 +85,13 @@ const Servicios = ()=>{
                         <h3>Desarrollo Web</h3>
                     </div>
                     <div className="informacionServicios">
-                        <h4>Diseño de páginas web estáticas y autoadministrables</h4>
-                        <h4>Diseño de páginas web con catálogo de productos</h4>
-                        <h4>Páginas E-Commerce</h4>
+                        <h4>Desarrollo de páginas web:</h4>
+                        <h4>Estáticas, Autoadministrables,</h4>
+                        <h4>Con catálogo de productos, </h4>
+                        <h4>E-Commerce</h4>
                         <h4>Mantenimiento y service</h4>
                     </div>
-                    <img src={Imagenes.imagenServiciosPrueba} alt="imgprueba" className="imgServicios"></img>
+                    {/* <img src={Imagenes.imagenServiciosPrueba} alt="imgprueba" className="imgServicios"></img> */}
                 </div>
             </div>
         </div>
