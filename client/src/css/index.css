@@ -1,10 +1,12 @@
 
 /* Propiedades Globales */
-
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'PT Serif', serif;
+
 }
 
 /* Página principal */
@@ -62,21 +64,14 @@
 }
 
 
-.prueba{
-  /* Properties */
-  border: solid;
-  background-color: rgb(255, 115, 0);
 
-  /* Sizes */
-  height: 30em;
-  transition: 1s;
-}
 
 /* Tercer Bloque */
 .thirdBlock{
     /* Properties */
     display: flex;
     justify-content: center;
+    background-color: rgba(233, 233, 233, 0.521);
 
     /* Sizes */
     height: 30em;
