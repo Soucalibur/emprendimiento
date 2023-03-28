@@ -6,7 +6,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'PT Serif', serif;
-
 }
 
 /* Página principal */
@@ -57,7 +56,7 @@
 
 .firstBlock{
     /* Properties */
-    
+    background-color: black;  
 
     /* Sizes */
     height: 91vh;
@@ -71,8 +70,7 @@
     /* Properties */
     display: flex;
     justify-content: center;
-    background-color: rgba(233, 233, 233, 0.521);
-
+    background-color: rgb(49, 49, 49);
     /* Sizes */
     height: 30em;
 }
@@ -80,60 +78,7 @@
 /* ------------------------------------- */
 
 
-.fourthBlock{
-  
-  /* Display */
-  display: grid;
-  
-  /* Properties */
 
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(12, 1fr);
-  background-color: black;
-  color: white;
-
-  /* Sizes */
-  height: 10em;
-}
-
-/* Footer */
-
-.footerDW{
-  /* Position */
-  grid-column: 1;
-  grid-row: 2/11;
-  /* Properties */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* flex-wrap: wrap; */
-  flex-direction: column;
-}
-
-.footerMP{
-  /* Position */
-  grid-column: 2;
-  grid-row: 2/11;
-  /* Properties */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  /* Sizes */
-}
-
-.titleFooter{
-  grid-column: 1/3;
-  text-align: center;
-  padding: 10px;
-}
-
-.containerLogosFooter{
-  display: flex;
-  justify-content: space-around;
-  width: 13em;
-  margin: 5px;
-}
 
 .imgLogo{
   /* Properties */

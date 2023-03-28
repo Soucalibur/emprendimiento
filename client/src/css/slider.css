@@ -2,11 +2,15 @@
 .swiper {
     width: 98vw;
     height: 90.9vh;
+    background-color: black;
+
 }
 .swiper-slide {
     text-align: center;
     font-size: 18px;
     background: #fff;
+    background-color: black;
+
   
     /* Center slide text vertically */
     display: flex;

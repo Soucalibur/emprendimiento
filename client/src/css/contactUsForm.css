@@ -5,6 +5,7 @@
 
     /* Properties */
     flex-wrap: wrap;
+    background-color: rgb(49, 49, 49);
 
     flex-direction: column;
     align-items: center;
@@ -13,22 +14,23 @@
     padding: 7px;
     margin-top: 30px;
     font-size: 1.7em;
-    color: rgb(255, 0, 242);
+    color: #0494b4;
 }
 .inputNameForm, .inputEmailForm, .inputSubjectForm, .inputMessageForm{
     width: 20em;
     height: 3em;
     margin-top: 20px;
     border-radius: 5px;
-    border: rgb(255, 0, 242) 1px solid;
-    color: rgb(255, 0, 242);
+    background-color: black;
+    border: #6bcecf 2px solid;
+    color: #0494b4;
     padding: 5px;
 }
 
 .inputNameForm:focus, .inputEmailForm:focus, .inputSubjectForm:focus, .inputMessageForm:focus{
     outline: none;
-    border: rgb(255, 0, 242) 2px solid;
-    box-shadow: 1px 1px 12px pink;
+    border: #0494b4 3px solid;
+    box-shadow: 1px 1px 12px #0494b4;
 }
 
 .inputMessageForm{
@@ -47,8 +49,8 @@
 
 .errorInfo{
    position: absolute;
-    box-shadow: 1px 1px 10px pink;
-    background: rgb(255, 0, 242);
+    box-shadow: 1px 1px 10px #0494b4;
+    background: #0494b4;
     color: white;
     border-radius: 30px;
     padding: 10px;
@@ -58,17 +60,17 @@
 #sendButtom:enabled{
     border-radius: 30px;
     padding: 10px;
-    box-shadow: 1px 1px 20px pink;
-    background: rgb(255, 0, 242);
+    box-shadow: 1px 1px 20px #0494b4;
+    background: #0494b4;
     color: white;
     border: none;
 }
 #sendButtom:enabled:hover{
-    background: rgb(255, 97, 247);
+    background: #0494b4;
     cursor: pointer;
 }
 #sendButtom:enabled:active{
-    background: rgb(196, 65, 187);
+    background: #0494b4;
     cursor: pointer;
     
     

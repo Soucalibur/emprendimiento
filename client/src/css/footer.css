@@ -1,0 +1,131 @@
+.fourthBlock{
+  
+    /* Display */
+    display: flex;
+    
+    /* Properties */
+  
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    justify-content: space-between;
+    gap: 20px;
+
+  
+    /* Sizes */
+    height: 32em;
+  }
+  
+  /* Footer */
+  
+  .footerDW{
+    /* Position */
+    grid-column: 1;
+    grid-row: 2/11;
+    /* Properties */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+  }
+  
+  .footerMP{
+    /* Position */
+    grid-column: 2;
+    grid-row: 2/11;
+    /* Properties */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* Sizes */
+  }
+  
+  .titleFooter{
+    text-align: center;
+    font-size: 1.5em;
+    padding: 10px;
+    margin-top: 10px;
+    color: #0494b4;
+  }
+  
+  .containerLogosFooter{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15px;
+    width: 13em;
+    
+  }
+
+  /* Cartas de presentacion */
+
+  .cartasFooter{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+  
+  .cartaPresentacionFooter{
+    display: flex;
+    
+    flex-direction: column;
+
+    
+    height: 20em;
+    width: 100vw;
+    border: 1px solid white;
+    
+    border-radius: 10px;
+    width: 20em;
+    height: 25em;
+    transition: .5s;
+    margin-bottom: 2em;
+
+}
+
+.títuloCPF{
+
+    align-self: center;
+    text-align: center;
+
+    color: #0494b4;
+    font-size: 1.4em; 
+    margin-top: 1em;
+    transition: 1s;
+}
+
+.informacionCPF{
+    
+    display:flex;
+    
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 20em;
+    width: 100%;
+    margin-bottom: 1em;
+    
+}
+
+.contenedorImgCPF{
+    background-color: red;
+
+}
+
+.imgCPF{
+    
+    height: 15em;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 9px;
+    
+}
+
+.cartaPresentacionFooter:hover{
+  transition: .5s;
+  transform: translateY(-15px);
+  /* border: rgb(255, 0, 242) 1px solid; */
+  box-shadow: 0 12px 16px rgba(161, 161, 161, 0.63);
+  background-color: rgba(92, 92, 92, 0.74);
+}

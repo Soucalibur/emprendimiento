@@ -8,7 +8,7 @@
     /* Properties */
     justify-content: space-around;
     align-items: center;
-    background-color: white;
+    background-color: rgb(49, 49, 49);    
     box-shadow: 1px 5px 7px rgb(138, 138, 138);
     
     /* Sizes */
@@ -30,7 +30,7 @@
     /* Properties */
     padding: 6px;
     font-family:Arial, Helvetica, sans-serif;
-    color: rgb(255, 0, 242);
+    color: #0494b4;
     cursor: pointer;
     z-index: 5;
     /* Sizes */
@@ -40,8 +40,9 @@
 
 
 .navegators > .active p {
-    transition: 1.2s;
-    border-bottom: solid 1px rgb(225, 0, 255);
+    transition: 0.5s;
+    border-bottom: solid 1px #05b1d8;
+    box-shadow:  0 7px 15px -10px #05b1d8 ;
     
 }
 
