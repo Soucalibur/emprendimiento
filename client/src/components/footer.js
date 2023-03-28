@@ -52,6 +52,9 @@ const Footer = () =>{
                         <div className="títuloCPF">
                             <h3>Desarrollo Web</h3>
                         </div>
+                        <div className="subtituloCPF">
+                            <h4>Matthew Gallar</h4>
+                        </div>
                         <div className="informacionCPF">
                             <div className="containerLogosFooter">
                                 <div>
@@ -88,6 +91,11 @@ const Footer = () =>{
                         <div className="títuloCPF">
                             <h3>Marketing y Publicidad</h3>
                         </div>
+                        
+                        <div className="subtituloCPF">
+                            <h4>Tobías Porcel</h4>
+                        </div>
+
                         <div className="informacionCPF">
                             <div className="containerLogosFooter">
                                 <a href="https://www.linkedin.com/in/matthewfullstack/" target="_blank" rel="noopener noreferrer">
@@ -110,6 +118,11 @@ const Footer = () =>{
                         <div className="títuloCPF">
                             <h3>Fotografía</h3>
                         </div>
+                        
+                        <div className="subtituloCPF">
+                            <h4>Yasmin Zabaroni</h4>
+                        </div>
+
                         <div className="informacionCPF">
                             <div className="containerLogosFooter">
                                 <a href="https://www.linkedin.com/in/matthewfullstack/" target="_blank" rel="noopener noreferrer">
