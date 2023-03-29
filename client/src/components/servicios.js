@@ -30,7 +30,9 @@ const Servicios = ()=>{
                 <img src={Imagenes.imagenServicios} alt="imgserv" className="imgServiciosSecondBlock"></img>
             </div>
 
-            <h3 className="nombreSegundoBotonServicios" hidden>Servicios</h3>
+            <div className="nombreSegundoBotonServicios" hidden>
+                <h3  >Servicios</h3>
+            </div>
 
             <div className="dontShowItFirst" hidden>
             
