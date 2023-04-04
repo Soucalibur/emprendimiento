@@ -6,7 +6,7 @@
     /* Properties */
   
     flex-direction: column;
-    background-color: black;
+    background-color: rgb(27, 27, 27);
     color: white;
     justify-content: space-between;
     gap: 20px;
@@ -18,36 +18,48 @@
   
   /* Footer */
   
-  .footerDW{
-    /* Position */
-    grid-column: 1;
-    grid-row: 2/11;
+
+  /*  ----------------- Modals ----------------------- */
+  .contenedorModal{
+    
     /* Properties */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* flex-wrap: wrap; */
-    flex-direction: column;
-  }
-  
-  .footerMP{
+    background-color: #0494b4;
+
     /* Position */
-    grid-column: 2;
-    grid-row: 2/11;
-    /* Properties */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    /* Sizes */
+    position: fixed;
+    top: 0;
+    z-index: 4;
+
   }
+  .botonFooterAbrirModal{
+
+    /* Properties */
+    border-radius: 10px;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    padding: 0.6em;
+    cursor: pointer;
+    transition: 0.5s;
+
+  }
+
+  .botonFooterAbrirModal:hover{
+
+    /* Properties */
+    box-shadow: 0 0 10px white;
+    transition: 0.3s;
+
+  }
+
+  /* ------------------------------------------------- */
   
   .titleFooter{
     text-align: center;
     font-size: 1.5em;
     padding: 10px;
     margin-top: 20px;
-    color: #0494b4;
+    color: white;
   }
   
   .containerLogosFooter{
@@ -111,11 +123,6 @@
     width: 100%;
     margin-bottom: 1em;
     
-}
-
-.contenedorImgCPF{
-    background-color: red;
-
 }
 
 .imgCPF{

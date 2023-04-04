@@ -32,8 +32,8 @@ const Index = ()=>{
                 <Slider/>
                 <SobreNosotros/>
                 <Servicios/>
-                <ContactUsForm/>
                 <Footer/>
+                <ContactUsForm/>
                 <WspLink/>
             </div>
         </div>

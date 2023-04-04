@@ -22,10 +22,10 @@ const Slider = ()=>{
                     pagination={{
                     clickable: true,
                     }}
-                    autoplay={{
-                        delay: 3500,
-                        disableOnInteraction: false,
-                      }}
+                    // autoplay={{
+                    //     delay: 3500,
+                    //     disableOnInteraction: false,
+                    //   }}
                     navigation={true}
                     modules={[Autoplay, Pagination, Navigation]}
                     className="mySwiper"
@@ -35,7 +35,7 @@ const Slider = ()=>{
                     <SwiperSlide><img src={ImagenesCarrusel[2].name} alt="img3" /></SwiperSlide>
                     
                 </Swiper>
-                
+            
 
             </div>
             

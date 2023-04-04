@@ -5,8 +5,8 @@
 
     /* Properties */
     flex-wrap: wrap;
-    background-color: rgb(49, 49, 49);
-
+    background-color: #021b55;
+    
     flex-direction: column;
     align-items: center;
 }
@@ -14,7 +14,7 @@
     padding: 7px;
     margin-top: 30px;
     font-size: 1.7em;
-    color: #0494b4;
+    color: white;
 }
 .inputNameForm, .inputEmailForm, .inputSubjectForm, .inputMessageForm{
     width: 20em;
@@ -23,14 +23,14 @@
     border-radius: 5px;
     background-color: black;
     border: #6bcecf 2px solid;
-    color: #0494b4;
+    color: white;
     padding: 5px;
 }
 
 .inputNameForm:focus, .inputEmailForm:focus, .inputSubjectForm:focus, .inputMessageForm:focus{
     outline: none;
     border: #0494b4 3px solid;
-    box-shadow: 1px 1px 12px #0494b4;
+    box-shadow: 1px 1px 12px white;
 }
 
 .inputMessageForm{

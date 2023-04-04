@@ -5,7 +5,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'PT Serif', serif;
+    font-family:  Calibri, 'Trebuchet MS';
+    
+   
 }
 
 /* Página principal */
@@ -70,7 +72,8 @@
     /* Properties */
     display: flex;
     justify-content: center;
-    background-color: rgb(49, 49, 49);
+    background-color: #021b55;    
+    
     /* Sizes */
     height: 30em;
 }

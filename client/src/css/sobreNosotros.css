@@ -12,7 +12,7 @@
     padding-top: 2em;
     padding-bottom: 2em;
     align-items: center;
-    background-color: rgb(49, 49, 49);
+    background-color: rgb(32, 32, 32);
 
 
     /* Sizes */
@@ -70,7 +70,7 @@
     /* Properties */
       transition: 1s;
       align-items: center;
-      background-color: rgb(49, 49, 49);
+      background-color: rgba(27, 27, 27, 0.315);
 
     /* Sizes */
       height: 25em;
@@ -97,7 +97,7 @@
     margin-bottom: 3em;
   
     /* Properties */
-    color: #0494b4;
+    color: white;
     font-size: 2.3em; 
   }
   .nombreSegundoBotonSN{
@@ -106,7 +106,7 @@
     margin-left: 3.5em;
 
     /* Properties */
-    color: #0494b4;
+    color: white;
     font-size: 2.5em; 
     transition: 1s;
 }
@@ -117,9 +117,9 @@
     animation-name: fadeIn;
     animation-duration: 2s;
     animation-fill-mode: both;
-    color: #0494b4;
+    color: white;
     font-size: 1.2em; 
-    text-align:justify;
+    /* text-align:justify; */
     margin-left: 60%;
     margin-right: 10%;
   }

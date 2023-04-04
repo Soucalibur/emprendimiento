@@ -26,3 +26,23 @@
     
   }
   
+  .swiper-button-prev{
+    opacity: 0;
+    transition: 0.3s;
+  }
+  .swiper-button-next{
+    color: white;
+    opacity: 0;
+    transition: 0.3s;
+  }
+
+  /* .swiper-button-next:after, .swiper-button-prev:after{
+    color: white;
+    transition: 0.3s;
+
+  } */
+
+  .swiper-button-next:hover, .swiper-button-prev:hover{
+    opacity: 1;
+    color: white;
+  }
