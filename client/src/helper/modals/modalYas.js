@@ -9,7 +9,7 @@ const ModalYasmin = ()=>{
     }
 
     return(
-        <div className="containerModal" id="modalYasmin">
+        <div className="firstContainerModal" id="modalYasmin">
             <h3>MODAL Yasmin</h3>
             <button onClick={closeModal} value="modalYasmin">Cerrar</button>
         </div>
