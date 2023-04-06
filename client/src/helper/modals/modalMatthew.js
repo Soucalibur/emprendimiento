@@ -7,7 +7,10 @@ const ModalMatthew = ()=>{
         event.preventDefault()
         const idModal = event.target.value
         const elementoCerrar = document.getElementById(idModal)
-        elementoCerrar.style.display = "none"
+        elementoCerrar.style.animationName = "fadeOut"
+        setTimeout(() => {
+            elementoCerrar.style.display = "none"
+        }, 250);
     }
 
     return(
@@ -33,11 +36,12 @@ const ModalMatthew = ()=>{
                         encontrar nuevos desafíos donde pueda aportar valor desde mi experiencia y conocimientos
                         adquiridos. 
                     </p>
+                    <br/>
                     <p>
-                        Fui colíder de creación de un E-commerce para la compra y venta de productos en la región
+                        Además fuí partícipe en la creación de un E-commerce para la compra y venta de productos en la región
                         Latam, permitiéndome mejorar mis habilidades tecnológicas y socioemocionales tales como
-                        trabajo en equipo, análisis, resolución de problemas, empatía, mente abierta, perseverancia,
-                        responsabilidad, entre otras.
+                        trabajo en equipo, análisis, resolución de problemas, empatía, mente abierta, perseverancia y 
+                        responsabilidad.
                     </p>
                 </div>
                 <div className="introduccionModal">

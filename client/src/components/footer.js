@@ -11,6 +11,7 @@ const Footer = () =>{
         event.preventDefault()
         const idModal = event.target.value
         const elemento = document.getElementById(idModal)
+        elemento.style.animationName = "fadeIn"
         elemento.style.display = "grid"
 
     }
