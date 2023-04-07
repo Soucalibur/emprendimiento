@@ -5,7 +5,7 @@
 
     /* Properties */
     flex-wrap: wrap;
-    background-color: black;
+    
     
     flex-direction: column;
     align-items: center;
@@ -22,14 +22,14 @@
     margin-top: 20px;
     border-radius: 5px;
     background-color: black;
-    border: #6bcecf 2px solid;
+    border: rgba(114,50,242,1) 2px solid;
     color: white;
     padding: 5px;
 }
 
 .inputNameForm:focus, .inputEmailForm:focus, .inputSubjectForm:focus, .inputMessageForm:focus{
     outline: none;
-    border: #0494b4 3px solid;
+    border: rgba(114,50,242,1) 3px solid;
     box-shadow: 1px 1px 12px white;
 }
 
@@ -49,8 +49,8 @@
 
 .errorInfo{
    position: absolute;
-    box-shadow: 1px 1px 10px #0494b4;
-    background: #0494b4;
+    box-shadow: 1px 1px 10px rgba(114,50,242,1);
+    background: rgba(114,50,242,1);
     color: white;
     border-radius: 30px;
     padding: 10px;
@@ -60,17 +60,17 @@
 #sendButtom:enabled{
     border-radius: 30px;
     padding: 10px;
-    box-shadow: 1px 1px 20px #0494b4;
-    background: #0494b4;
+    box-shadow: 1px 1px 20px rgba(114,50,242,1);
+    background: rgba(114,50,242,1);
     color: white;
     border: none;
 }
 #sendButtom:enabled:hover{
-    background: #0494b4;
+    background: rgba(114,50,242,1);
     cursor: pointer;
 }
 #sendButtom:enabled:active{
-    background: #0494b4;
+    background: rgba(114,50,242,1);
     cursor: pointer;
     
     
