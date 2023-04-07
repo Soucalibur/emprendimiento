@@ -18,14 +18,15 @@ const Footer = () =>{
 
     return(
         <div className="fourthBlock">
-            <div>
-                <h3 className="titleFooter">EQUIPO</h3>
+            <div className="titleFooter">
+                <h3 >EQUIPO</h3>
             </div>
             
             
             <ModalMatthew></ModalMatthew>
             <ModalTobias></ModalTobias>
             <ModalYasmin></ModalYasmin>
+            
             
                
                 <div className="cartasFooter">
@@ -43,31 +44,6 @@ const Footer = () =>{
 
                         <button onClick={showModal} value="modalMatthew" className="botonFooterAbrirModal">Más información</button>
 
-                            {/* <div className="containerLogosFooter">
-                                <div>
-                                    <a href="https://www.linkedin.com/in/matthewfullstack/" target="_blank" rel="noopener noreferrer">
-                                        <img className="imgLogo" src={Imagenes.logoLinkedIn} alt="linkedinimg"></img>
-                                    </a>
-                                </div>
-                                
-                                <div>
-                                    <a href="https://github.com/Soucalibur" target="_blank" rel="noopener noreferrer" >
-                                        <img className="imgLogo" src={Imagenes.logoGithub} alt="githubimg"></img>
-                                    </a>
-                                </div>
-
-                                <div>
-                                    <a href="https://portfolio-pbhoz3dhf-soucalibur.vercel.app/" target="_blank" rel="noopener noreferrer">
-                                        <img className="imgLogo" src={Imagenes.logoPortfolio} alt="githubimg"></img>
-                                    </a>
-                                </div>
-
-                                <div>
-                                    <a href="https://instagram.com/matthewgallardev?igshid=OTJhZDVkZWE=" target="_blank" rel="noopener noreferrer">
-                                        <img className="imgLogo" src={Imagenes.logoInstagram} alt="githubimg"></img>
-                                    </a>
-                                </div>
-                            </div> */}
                         </div>
                     </div>
 
@@ -86,17 +62,7 @@ const Footer = () =>{
                         <div className="informacionCPF">
 
                         <button onClick={showModal} value="modalTobias" className="botonFooterAbrirModal">Más información</button>
-                            {/* <div className="containerLogosFooter">
-                                <a href="https://www.linkedin.com/in/matthewfullstack/" target="_blank" rel="noopener noreferrer">
-                                    <img className="imgLogo" src={Imagenes.logoLinkedIn} alt="linkedinimg"></img>
-                                </a>
-                                <a href="https://github.com/Soucalibur" target="_blank" rel="noopener noreferrer" >
-                                    <img className="imgLogo" src={Imagenes.logoGithub} alt="githubimg"></img>
-                                </a>
-                                <a href="https://portfolio-pbhoz3dhf-soucalibur.vercel.app/" target="_blank" rel="noopener noreferrer">
-                                    <img className="imgLogo" src={Imagenes.logoPortfolio} alt="githubimg"></img>
-                                </a>
-                            </div> */}
+                           
                         </div>
                     </div>
 
@@ -115,17 +81,7 @@ const Footer = () =>{
                         <div className="informacionCPF">
 
                         <button onClick={showModal} value="modalYasmin" className="botonFooterAbrirModal">Más información</button>
-                            {/* <div className="containerLogosFooter">
-                                <a href="https://www.linkedin.com/in/matthewfullstack/" target="_blank" rel="noopener noreferrer">
-                                    <img className="imgLogo" src={Imagenes.logoLinkedIn} alt="linkedinimg"></img>
-                                </a>
-                                <a href="https://github.com/Soucalibur" target="_blank" rel="noopener noreferrer" >
-                                    <img className="imgLogo" src={Imagenes.logoGithub} alt="githubimg"></img>
-                                </a>
-                                <a href="https://portfolio-pbhoz3dhf-soucalibur.vercel.app/" target="_blank" rel="noopener noreferrer">
-                                    <img className="imgLogo" src={Imagenes.logoPortfolio} alt="githubimg"></img>
-                                </a>
-                            </div> */}
+                            
                         </div>
                     </div>
 
