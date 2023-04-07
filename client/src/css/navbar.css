@@ -8,8 +8,8 @@
     /* Properties */
     justify-content: space-around;
     align-items: center;
-    background-color: #20115b;
-    box-shadow: 1px 5px 7px rgb(138, 138, 138);
+    background: linear-gradient(0deg, rgba(114,50,242,1) 0%, rgba(34,18,95,1) 27%, rgba(1,1,8,1) 79%);
+    box-shadow: 0 4px 10px rgba(114,50,242,1);
     
     /* Sizes */
     height: 4em;
