@@ -12,12 +12,9 @@
     padding-top: 2em;
     padding-bottom: 2em;
     align-items: center;
-    background-color: rgb(32, 32, 32);
-
-
-    /* Sizes */
-    height: 24em;
-  }
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(5,3,20,1) 10%, rgba(43,21,111,1) 30%, rgba(114,50,242,1) 50%, rgba(43,21,111,1) 70%, rgba(5,3,20,1) 90%, rgba(0,0,0,1) 100%);  
+  
+}
   
   .noMostrarPrimeroSN{
     /* Properties */
@@ -66,11 +63,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 24em;
-  
+
     /* Properties */
       transition: 1s;
       align-items: center;
-      background-color: rgba(27, 27, 27, 0.315);
+      background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(5,3,20,1) 10%, rgba(43,21,111,1) 30%, rgba(114,50,242,1) 50%, rgba(43,21,111,1) 70%, rgba(5,3,20,1) 90%, rgba(0,0,0,1) 100%);  
 
     /* Sizes */
       height: 25em;
@@ -83,7 +80,7 @@
     /* Position */
     grid-column: 1/5;
     grid-row: 1/3;
-  
+    
     /* Properties */
     animation-name: fadeIn;
     animation-duration: 2s;
