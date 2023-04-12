@@ -8,7 +8,7 @@ const SobreNosotros = ()=>{
         const elementmostrarPrimeroSN = document.getElementsByClassName(value[0])
         const elementnoMostrarPrimeroSN = document.getElementsByClassName(value[1])
         const elementbloqueSobreNosotros = document.getElementsByClassName(value[2])
-        const elementoNombreBotonServicios = document.getElementsByClassName(value[3])
+        const elementoTituloSN = document.getElementsByClassName(value[3])
         const elementoBoton = document.getElementsByClassName(value[4])
         
         if(elementmostrarPrimeroSN[0].hidden === false){
@@ -16,7 +16,7 @@ const SobreNosotros = ()=>{
             elementnoMostrarPrimeroSN[0].hidden = false
             elementnoMostrarPrimeroSN[0].className = "mostrarSegundoSN"
             elementbloqueSobreNosotros[0].className = "segundoBlockSN"
-            elementoNombreBotonServicios[0].className = "nombreSegundoBotonSN"
+            elementoTituloSN[0].className = "nombreSegundoBotonSN"
             elementoBoton[0].remove()
         }
         
@@ -26,10 +26,10 @@ const SobreNosotros = ()=>{
         <div className="bloqueSobreNosotros" id="sobreNosotros">
 
             <div className="mostrarPrimeroSN">
-                    <button onClick={show_hide}  value="mostrarPrimeroSN noMostrarPrimeroSN bloqueSobreNosotros nombreBotonSN buttonSecondBlock" className="buttonSecondBlock"></button>
-                    <img src={Imagenes.imagenServicios} alt="imgserv" className="imgServiciosSecondBlock"></img>
+                <button onClick={show_hide}  value="mostrarPrimeroSN noMostrarPrimeroSN bloqueSobreNosotros tituloSN buttonSecondBlock" className="buttonSecondBlock"></button>
+                <img src={Imagenes.imagenServicios} alt="imgserv" className="imgServiciosSecondBlock"></img>
             </div>
-            <h3 className="nombreBotonSN">Sobre Nosotros</h3>
+            <h3 className="tituloSN">Sobre Nosotros</h3>
             <div className="noMostrarPrimeroSN" hidden>
 
                 <p className="informacion"> 

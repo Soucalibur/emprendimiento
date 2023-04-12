@@ -6,26 +6,26 @@
     /* Display */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 20em;
+    grid-template-rows: 18em;
   
     /* Properties */
     padding-top: 2em;
     padding-bottom: 2em;
     align-items: center;
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(5,3,20,1) 10%, rgba(43,21,111,1) 30%, rgba(114,50,242,1) 50%, rgba(43,21,111,1) 70%, rgba(5,3,20,1) 90%, rgba(0,0,0,1) 100%);  
-  
 }
   
   .noMostrarPrimeroSN{
     /* Properties */
     opacity: 0;
+
   }
   
   .mostrarPrimeroSN{
     /* Display */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 24em;
+    grid-template-rows: 20em;
   
     /* Position */
     grid-column: 1/5;
@@ -33,24 +33,26 @@
     
     transition: 1s;
     align-items: center;
-  
+    
+
   }
   
   .buttonSecondBlock{
     /* Positions */
     grid-column: 1/5;
     grid-row: 1/2;
-    z-index: 2;
+    z-index: 1;
   
     /* Properties */
     border: none;
     background:none;
     cursor: pointer;
-    z-index: 1;
     
     /* Sizes */
     width: 100%;
-    height: 100%;  
+    height: 100%;
+    
+  
   }
   
   
@@ -69,8 +71,7 @@
       align-items: center;
       background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(5,3,20,1) 10%, rgba(43,21,111,1) 30%, rgba(114,50,242,1) 50%, rgba(43,21,111,1) 70%, rgba(5,3,20,1) 90%, rgba(0,0,0,1) 100%);  
 
-    /* Sizes */
-      height: 25em;
+
   }
   
   .mostrarSegundoSN{
@@ -85,14 +86,17 @@
     animation-name: fadeIn;
     animation-duration: 2s;
     animation-fill-mode: both;
+    transition: 1s;
+   
+
   }
-  .nombreBotonSN{
+  .tituloSN{
     /* Positions */
-    grid-column: 1/4;
+    grid-column: 1/5;
     grid-row: 1;
     
     margin-left: 6%;
-    margin-bottom: 3em;
+    z-index: 1;
   
     /* Properties */
     color: white;
@@ -100,12 +104,15 @@
   }
   .nombreSegundoBotonSN{
     /* Positions */
-    position: absolute;
-    margin-left: 3.5em;
-
+    grid-column: 1/5;
+    grid-row: 1;
+    
+    margin-left: 10%;
+    z-index: 1;
+  
     /* Properties */
     color: white;
-    font-size: 2.5em; 
+    font-size: 2.3em; 
     transition: 1s;
 }
   
@@ -132,7 +139,7 @@
 
   @media (max-width:700px){
 
-    .nombreBotonSN{
+    .tituloSN{
       /* Positions */
       grid-column: 1/5;
       grid-row: 1;
@@ -141,7 +148,7 @@
       align-self: center;
       margin: 0;
       
-      z-index: 1;
+      z-index: 0;
       background: rgba(107, 107, 107, 0.829);
       /* Properties */
       color: white;
@@ -150,5 +157,68 @@
       width: 5em;
       text-align: center;
     }
+    .mostrarSegundoSN{
+      /* Display */
+      display: flex;
+    
+      /* Position */
+      grid-column: 1/5;
+      grid-row: 1/3;
+      
+      /* Properties */
+      animation-name: fadeIn;
+      animation-duration: 2s;
+      animation-fill-mode: both;
+      transition: 1s;
+      flex-direction: column;
+     
+  
+    }
+    
+    .nombreSegundoBotonSN{
+      /* Positions */
+      grid-column: 1/5;
+      grid-row: 1;
+      margin-bottom: 7em;
+      margin-left: 0;
+      z-index: 1;
+      text-align: center;
+      /* Properties */
+      color: white;
+      font-size: 2.3em; 
+      transition: 1s;
+  }
+    
+    .informacion{
+    
+      /* Properties */
+      animation-name: fadeIn;
+      animation-duration: 2s;
+      animation-fill-mode: both;
+      color: white;
+      font-size: 1.2em; 
+      /* text-align:justify; */
+      margin-left: 3em;
+      margin-right: 3em;
+    }
+    
   }
   
+  @media (max-width:500px){
+
+    
+    .informacion{
+    
+      /* Properties */
+      animation-name: fadeIn;
+      animation-duration: 2s;
+      animation-fill-mode: both;
+      color: white;
+      margin-top: 2em;
+      font-size: 1em; 
+      /* text-align:justify; */
+      margin-left: 3em;
+      margin-right: 3em;
+    }
+    
+  }
