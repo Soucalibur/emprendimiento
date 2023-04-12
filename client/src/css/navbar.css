@@ -50,8 +50,63 @@
     font-size: 1.4em;
     color: #05b1d8;
     transition: 0.5s;
+    border-radius: 20px;
+}
+.navegators:visited{
+    border-radius: 20px;
 }
 
+.navegatorPhone{
+    display: none;
+}
+
+.modalMenuPhone{
+    
+    display: none;
+    position: absolute;
+    
+    width: 20vw;
+    height: 100vh;
+    color: white;
+    z-index: 5;
+    background-color: black;
+    flex-direction: column;
+    /* Position */
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+
+    animation: fadeIn 0.5s;
+    
+    
+}
+
+.modalMenuPhone > .navegators{
+    display: flex;
+}
+
+@media (max-width: 2000px){
+    .containerNavbar{
+       padding: 0 0 0 28%;
+    }
+    .navegators{
+        display: none;
+    }
+    .navegatorPhone{
+        /* Display */
+        display: flex;
+
+        /* Properties */
+        color: white;
+        font-size: 2em;
+        cursor: pointer;
+
+    }
+}
 
 
 

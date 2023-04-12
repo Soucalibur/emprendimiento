@@ -9,7 +9,9 @@ const Navbar = ()=>{
         scroll.scrollToTop(); 
     }
     
-    
+    const showLinks = () =>{
+        document.getElementsByClassName("modalMenuPhone")[0].style.display = "flex"
+    }
 
     return(
         <div className="positionNavbar">
@@ -54,6 +56,52 @@ const Navbar = ()=>{
                         <p>Contacto</p>
                     </Link>
                 </div>
+                
+                <div className="navegatorPhone">
+                    <p onClick={showLinks}>☰</p>
+                </div>
+
+                {/* --------------------------------------------- */}
+                <div className="modalMenuPhone">
+                    <div className="navegators">
+                        <Link 
+                            to="sobreNosotros"
+                            smooth="easeInOutQuart"
+                            duration="1200"
+                            spy={true}
+                            activeClass="active"
+                            offset={-64}
+                            >
+                            <p>Quienes somos</p>
+                        </Link>
+                    </div>
+                    <div className="navegators">
+                        <Link 
+                            to="servicios"
+                            smooth="easeInOutQuart"
+                            duration="1200"
+                            spy={true}
+                            activeClass= "active"
+                            offset={-64}
+                            >
+                            <p>Servicios</p>
+                        </Link>
+                        
+                    </div>
+                    <div className="navegators">
+                        <Link 
+                            to="contacto"
+                            smooth="easeInOutQuart"
+                            duration="1200"
+                            spy={true}
+                            activeClass="active"
+                            offset={-64}
+                            >
+                            <p>Contacto</p>
+                        </Link>
+                    </div>
+                </div>
+                {/* --------------------------------------------- */}
             </div>
         </div>
     )
