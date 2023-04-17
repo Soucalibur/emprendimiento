@@ -10,7 +10,21 @@ const Navbar = ()=>{
     }
     
     const showLinks = () =>{
-        document.getElementsByClassName("modalMenuPhone")[0].style.display = "flex"
+        const modalMenuPhone =  document.getElementsByClassName("modalMenuPhone")
+        modalMenuPhone[0].style.opacity = 1
+        modalMenuPhone[0].style.transition = "1s"
+        modalMenuPhone[0].style.animationName = "fadeIn"
+        modalMenuPhone[0].style.display = "flex"
+    }
+
+    const disappearLinks = ()=>{
+        const modalMenuPhone =  document.getElementsByClassName("modalMenuPhone")
+        console.log(modalMenuPhone[0].style)
+        modalMenuPhone[0].style.opacity = 0
+        modalMenuPhone[0].style.transition = "1s"
+        setTimeout(() => {
+            modalMenuPhone[0].style.display = "none"
+        }, 1000);
     }
 
     return(
@@ -56,14 +70,14 @@ const Navbar = ()=>{
                         <p>Contacto</p>
                     </Link>
                 </div>
-                
+                {/* ---------------------------------------------- */}
                 <div className="navegatorPhone">
                     <p onClick={showLinks}>☰</p>
                 </div>
 
                 {/* --------------------------------------------- */}
                 <div className="modalMenuPhone">
-                    <div className="navegators">
+                    <div className="navegators" >
                         <Link 
                             to="sobreNosotros"
                             smooth="easeInOutQuart"
@@ -71,6 +85,7 @@ const Navbar = ()=>{
                             spy={true}
                             activeClass="active"
                             offset={-64}
+                            onClick={disappearLinks}
                             >
                             <p>Quienes somos</p>
                         </Link>
@@ -83,6 +98,7 @@ const Navbar = ()=>{
                             spy={true}
                             activeClass= "active"
                             offset={-64}
+                            onClick={disappearLinks}
                             >
                             <p>Servicios</p>
                         </Link>
@@ -96,6 +112,7 @@ const Navbar = ()=>{
                             spy={true}
                             activeClass="active"
                             offset={-64}
+                            onClick={disappearLinks}
                             >
                             <p>Contacto</p>
                         </Link>

@@ -31,7 +31,7 @@ const Servicios = ()=>{
             </div>
 
             <div className="nombreSegundoBotonServicios" hidden>
-                <h3  >Servicios</h3>
+                <h3>Servicios</h3>
             </div>
 
             <div className="dontShowItFirst" hidden>
