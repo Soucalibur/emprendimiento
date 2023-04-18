@@ -92,7 +92,7 @@
     display: flex;
 }
 
-@media (max-width: 2000px){
+@media (max-width: 700px){
     .containerNavbar{
        padding: 0 0 0 28%;
     }

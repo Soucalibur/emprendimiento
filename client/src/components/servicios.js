@@ -25,13 +25,13 @@ const Servicios = ()=>{
         <div className="secondBlockFirst" id="servicios">
 
             <div className="showedFirst">
-                <h3 className="nombreBotonServicios">Servicios</h3>
+                <h3 className="nombreBotonServicios">SERVICIOS</h3>
                 <button onClick={show_hide}  value="showedFirst dontShowItFirst secondBlockFirst botonServicios" className="buttonSecondBlock" id="botonServicios"></button>
                 <img src={Imagenes.imagenServicios} alt="imgserv" className="imgServiciosSecondBlock"></img>
             </div>
 
             <div className="nombreSegundoBotonServicios" hidden>
-                <h3>Servicios</h3>
+                <h3>SERVICIOS</h3>
             </div>
 
             <div className="dontShowItFirst" hidden>

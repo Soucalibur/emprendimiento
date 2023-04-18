@@ -8,6 +8,8 @@
     flex-direction: column;
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(5,3,20,1) 10%, rgba(43,21,111,1) 30%, rgba(114,50,242,1) 50%, rgba(43,21,111,1) 70%, rgba(5,3,20,1) 90%, rgba(0,0,0,1) 100%);
     color: white;
+    border: 2px solid white;
+    
 
   }
 
@@ -102,18 +104,40 @@
     
   }
 
+  
+  .tituloSegundoEquipo{
+    
+    font-size: 2em;
+    align-self: center;
+    
+  }
   /* Cartas de presentacion */
 
   .cartasFooter{
     display: none;
     justify-content: space-around;
     flex-wrap: wrap;
+    flex-direction: column;
     gap: 20px;
+    padding: 2em 0 0 0;
+    
     animation-name: fadeIn;
     animation-duration: 2s;
     animation-fill-mode: both;
+    
 }
-  
+  .contenedorCartasPresentacionFooter{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+    padding: 1em 0 1em 0;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    
+  }
   .cartaPresentacionFooter{
     display: flex;
     

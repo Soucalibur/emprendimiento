@@ -125,6 +125,8 @@
     flex-wrap: wrap;
     gap: 2em;
     justify-content: space-evenly;
+    padding-bottom: 3em;
+   
   }
   
 

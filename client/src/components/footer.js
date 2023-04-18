@@ -19,30 +19,36 @@ const Footer = () =>{
     const hideMostrarPrimerEquipo = ()=>{
         const mostrarPrimeroEquipo = document.getElementsByClassName("mostrarPrimeroEquipo")
         const mostrarSegundoCartasFooter = document.getElementsByClassName("cartasFooter")
+        const anchoPantalla = window.screen.width //Ancho de la pantalla
         
+        if(anchoPantalla > 1003){
+            mostrarPrimeroEquipo[0].style.marginBottom = "12em"
+        }
+        else if(anchoPantalla < 1004 && anchoPantalla > 663){
+            mostrarPrimeroEquipo[0].style.marginBottom = "41em"
+        }
+        else if(anchoPantalla < 664){
+            mostrarPrimeroEquipo[0].style.marginBottom = "70em"
+        }
+
+        // Efecto de opacidad hacia cero
         mostrarPrimeroEquipo[0].style.opacity = 0
         mostrarPrimeroEquipo[0].style.transition = "1s"
-        mostrarPrimeroEquipo[0].style.marginBottom = "9.8vh"
+       
         setTimeout(() => {
             mostrarPrimeroEquipo[0].style.display = "none"
         }, 1000);
 
+        // Mostrar el otro div con un efecto de opacidad hacia 1 ya preestablecido
         setTimeout(() => {    
             mostrarSegundoCartasFooter[0].style.display = "flex"
                 
         }, 1000);
-        
-        // mostrarSegundoCartasFooter[0].style.heigth = "30em"
            
     }
 
     return(
-        <div className="fourthBlock">
-            {/* <div className="titleFooter">
-                <h3 >EQUIPO</h3>
-            </div> */}
-            
-            
+        <div className="fourthBlock"> 
             
             <div className="mostrarPrimeroEquipo">
                 <h3 className="tituloPrimeroEquipo">EQUIPO</h3>
@@ -58,58 +64,66 @@ const Footer = () =>{
             
                
             <div className="cartasFooter">
-                <div className="cartaPresentacionFooter">
-                    
-                        <img src={Imagenes.tarjetaDesarrolloWeb} alt="imgprueba" className="imgCPF"></img>
-                    
-                    <div className="títuloCPF">
-                        <h3>Desarrollo Web</h3>
-                    </div>
-                    <div className="subtituloCPF">
-                        <h4>Matthew Gallar</h4>
-                    </div>
-                    <div className="informacionCPF">
-
-                    <button onClick={showModal} value="modalMatthew" className="botonFooterAbrirModal">Más información</button>
-
-                    </div>
+                
+                <div className="tituloSegundoEquipo">
+                    <h3>EQUIPO</h3> 
                 </div>
+                
+                <div className="contenedorCartasPresentacionFooter">
 
-                <div className="cartaPresentacionFooter">
-
-                    <img src={Imagenes.tarjetaMarketing} alt="imgprueba" className="imgCPF"></img>
-                    
-                    <div className="títuloCPF">
-                        <h3>Marketing y Publicidad</h3>
-                    </div>
-                    
-                    <div className="subtituloCPF">
-                        <h4>Tobías Porcel</h4>
-                    </div>
-
-                    <div className="informacionCPF">
-
-                    <button onClick={showModal} value="modalTobias" className="botonFooterAbrirModal">Más información</button>
+                    <div className="cartaPresentacionFooter">
                         
-                    </div>
-                </div>
-
-                <div className="cartaPresentacionFooter">
-
-                    <img src={Imagenes.tarjetaFotografia} alt="imgprueba" className="imgCPF"></img>
-                    
-                    <div className="títuloCPF">
-                        <h3>Fotografía</h3>
-                    </div>
-                    
-                    <div className="subtituloCPF">
-                        <h4>Yasmin Zavaroni</h4>
-                    </div>
-
-                    <div className="informacionCPF">
-
-                    <button onClick={showModal} value="modalYasmin" className="botonFooterAbrirModal">Más información</button>
+                            <img src={Imagenes.tarjetaDesarrolloWeb} alt="imgprueba" className="imgCPF"></img>
                         
+                        <div className="títuloCPF">
+                            <h3>Desarrollo Web</h3>
+                        </div>
+                        <div className="subtituloCPF">
+                            <h4>Matthew Gallar</h4>
+                        </div>
+                        <div className="informacionCPF">
+
+                        <button onClick={showModal} value="modalMatthew" className="botonFooterAbrirModal">Más información</button>
+
+                        </div>
+                    </div>
+
+                    <div className="cartaPresentacionFooter">
+
+                        <img src={Imagenes.tarjetaMarketing} alt="imgprueba" className="imgCPF"></img>
+                        
+                        <div className="títuloCPF">
+                            <h3>Marketing y Publicidad</h3>
+                        </div>
+                        
+                        <div className="subtituloCPF">
+                            <h4>Tobías Porcel</h4>
+                        </div>
+
+                        <div className="informacionCPF">
+
+                        <button onClick={showModal} value="modalTobias" className="botonFooterAbrirModal">Más información</button>
+                            
+                        </div>
+                    </div>
+
+                    <div className="cartaPresentacionFooter">
+
+                        <img src={Imagenes.tarjetaFotografia} alt="imgprueba" className="imgCPF"></img>
+                        
+                        <div className="títuloCPF">
+                            <h3>Fotografía</h3>
+                        </div>
+                        
+                        <div className="subtituloCPF">
+                            <h4>Yasmin Zavaroni</h4>
+                        </div>
+
+                        <div className="informacionCPF">
+
+                        <button onClick={showModal} value="modalYasmin" className="botonFooterAbrirModal">Más información</button>
+                            
+                        </div>
                     </div>
                 </div>
 

@@ -13,9 +13,9 @@ const SobreNosotros = ()=>{
         
         if(elementmostrarPrimeroSN[0].hidden === false){
             elementmostrarPrimeroSN[0].className = "dontShowIt"
-            elementnoMostrarPrimeroSN[0].hidden = false
             elementnoMostrarPrimeroSN[0].className = "mostrarSegundoSN"
             elementbloqueSobreNosotros[0].className = "segundoBlockSN"
+            elementnoMostrarPrimeroSN[0].hidden = false
             elementoTituloSN[0].className = "nombreSegundoBotonSN"
             elementoBoton[0].remove()
         }
@@ -29,7 +29,7 @@ const SobreNosotros = ()=>{
                 <button onClick={show_hide}  value="mostrarPrimeroSN noMostrarPrimeroSN bloqueSobreNosotros tituloSN buttonSecondBlock" className="buttonSecondBlock"></button>
                 <img src={Imagenes.imagenServicios} alt="imgserv" className="imgServiciosSecondBlock"></img>
             </div>
-            <h3 className="tituloSN">Sobre Nosotros</h3>
+            <h3 className="tituloSN">SOBRE NOSOTROS</h3>
             <div className="noMostrarPrimeroSN" hidden>
 
                 <p className="informacion"> 
