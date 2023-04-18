@@ -19,12 +19,13 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(5,3,20,1) 10%, rgba(43,21,111,1) 30%, rgba(114,50,242,1) 50%, rgba(43,21,111,1) 70%, rgba(5,3,20,1) 90%, rgba(0,0,0,1) 100%);
 }
 .imgLoading{
   
   width: 25%;
   height: 20%;
+  
   animation: girar 2s linear infinite;
   transform-style: preserve-3d
 }
@@ -143,5 +144,24 @@
   }
   100% {
     opacity: 0;
+  }
+}
+
+
+@media (max-width: 1100px){
+  .imgLoading{
+  
+    width: 40%;
+    height: 20%;
+    
+  }
+}
+
+@media (max-width: 700px){
+  .imgLoading{
+  
+    width: 60%;
+    height: 20%;
+    
   }
 }
