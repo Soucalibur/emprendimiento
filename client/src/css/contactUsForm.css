@@ -6,7 +6,6 @@
     /* Properties */
     flex-wrap: wrap;
     
-    
     flex-direction: column;
     align-items: center;
 }
@@ -81,6 +80,42 @@
     border-radius: 30px;
 }
 
+/* --------- Si se mando el mensaje ----------------- */
+
+.mensajeEnviado{
+    /* Properties */
+    display: flex;
+    justify-content: center;
+    background-color: black;   
+    flex-direction: column;
+    /* Sizes */
+    height: 35em;
+}
+.primerMensaje{
+    /* Properties */
+    align-self: center;
+    text-align: center;
+    
+    color: white;
+    font-size: 2em;
+    transition: 1s;
+    animation: fadeIn 2s linear;
+}
+
+.segundoMensaje{
+    align-self: center;
+    text-align: center;
+    
+    color: white;
+    font-size: 2em;
+    
+    transition: 1s;
+    animation: fadeIn 2s linear;
+    
+}
+
+
+/* ----------------------------------------- */
 
 
 @media (max-width:800px){
@@ -104,3 +139,23 @@
     
     
   }
+
+  
+/* Animaciones */
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  

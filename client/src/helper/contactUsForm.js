@@ -37,8 +37,8 @@ const ContactUsForm = ()=>{
         name: "",
         email: "",
         subject: "",
-        message: ""
-        
+        message: "",
+        mensajeEnviado:0
     })
 
     const [error, setError] = useState()
@@ -53,11 +53,25 @@ const ContactUsForm = ()=>{
         event.preventDefault()
         if(!Object.entries(error).length){
             EmailJS(form)
-            console.log("MENSAJE ENVIADO")
+            const formulario = document.getElementsByClassName("containerForm")
+            formulario[0].style.transition = "1s"
+            formulario[0].style.opacity = 0
+            setTimeout(() => {
+                setInput({...input,mensajeEnviado:1})
+            }, 1000);
         }
     }
 
-    
+    if(input.mensajeEnviado === 1){
+        return(
+           <div className="mensajeEnviado" id="contacto">
+                <h3 className="primerMensaje">MENSAJE ENVIADO</h3>
+                <h3 className="segundoMensaje">Gracias por contactarnos, en la brevedad estaremos respondiendo</h3>
+                
+           </div> 
+
+        )
+    }
 
     return(
         

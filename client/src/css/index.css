@@ -110,7 +110,7 @@
   /* Sizes and Positions */
   height: 5em;
   width: 5em;
-  z-index: 1;
+  z-index: 10;
   bottom:0;
   right: 0;
   margin-bottom: 3em;
@@ -119,13 +119,12 @@
 .imgLogoWsp:hover{
 
   /* Properties */
-  background-image: url(./img/clickToChat.png);
+  
 
   /* Sizes and Positions */
-  height: 15em;
-  width: 15em;
-  margin-bottom: -1em;
-  margin-right: 1em;
+  height: 6em;
+  width: 6em;
+  
 }
 
 

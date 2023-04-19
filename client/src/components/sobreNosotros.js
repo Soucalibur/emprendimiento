@@ -10,12 +10,12 @@ const SobreNosotros = ()=>{
         const elementbloqueSobreNosotros = document.getElementsByClassName(value[2])
         const elementoTituloSN = document.getElementsByClassName(value[3])
         const elementoBoton = document.getElementsByClassName(value[4])
-        
+        console.log(elementnoMostrarPrimeroSN)
         if(elementmostrarPrimeroSN[0].hidden === false){
+            console.log("entro")
             elementmostrarPrimeroSN[0].className = "dontShowIt"
             elementnoMostrarPrimeroSN[0].className = "mostrarSegundoSN"
             elementbloqueSobreNosotros[0].className = "segundoBlockSN"
-            elementnoMostrarPrimeroSN[0].hidden = false
             elementoTituloSN[0].className = "nombreSegundoBotonSN"
             elementoBoton[0].remove()
         }
