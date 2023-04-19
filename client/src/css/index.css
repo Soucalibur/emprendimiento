@@ -47,7 +47,7 @@
     /* Properties */
     flex-direction: column;
     flex-wrap: wrap;
-
+    background-color: black;
 }
 
 /* Contenedor posiciones */

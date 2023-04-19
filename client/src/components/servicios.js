@@ -9,14 +9,32 @@ const Servicios = ()=>{
         const elementDontShowItFirst = document.getElementsByClassName(value[1])
         const elementSecondBlockFirst = document.getElementsByClassName(value[2])
         const elementoNombreBotonServicios = document.getElementById(value[3])
-
+        const anchoPantalla = window.screen.width
         if(elementShowedFirst[0].hidden === false){
-            elementShowedFirst[0].className = "dontShowIt"
-            elementDontShowItFirst[0].hidden = false
-            elementDontShowItFirst[0].className = "showedSecond"
-            elementSecondBlockFirst[0].className = "secondBlockSecond"
-            document.getElementsByClassName("nombreSegundoBotonServicios")[0].hidden = false
-            elementoNombreBotonServicios.style.display = "none"
+            // elementShowedFirst[0].className = "dontShowIt"
+            // elementDontShowItFirst[0].className = "showedSecond"
+            // elementSecondBlockFirst[0].className = "secondBlockSecond"
+            // document.getElementsByClassName("nombreSegundoBotonServicios")[0].hidden = false
+            // elementoNombreBotonServicios.style.display = "none"
+            elementShowedFirst[0].style.opacity = 0
+            elementShowedFirst[0].style.transition = "0.8s"
+            
+            if(anchoPantalla > 1727){
+                elementSecondBlockFirst[0].style.paddingBottom = "15.8em"
+            }
+            else{
+                elementSecondBlockFirst[0].style.paddingBottom = "50em"
+            }
+            setTimeout(() => {
+                elementSecondBlockFirst[0].style.paddingBottom = 0
+                elementShowedFirst[0].style.display = "none"
+                elementSecondBlockFirst[0].style.className = "secondBlockSecond"
+                elementSecondBlockFirst[0].classList.remove("secondBlockFirst")
+                elementDontShowItFirst[0].style.display = "flex"
+                document.getElementsByClassName("nombreSegundoBotonServicios")[0].hidden = false
+                elementoNombreBotonServicios.style.display = "none"
+            }, 1000);
+            
         }
         
     }
@@ -26,7 +44,7 @@ const Servicios = ()=>{
 
             <div className="showedFirst">
                 <h3 className="nombreBotonServicios">SERVICIOS</h3>
-                <button onClick={show_hide}  value="showedFirst dontShowItFirst secondBlockFirst botonServicios" className="buttonSecondBlock" id="botonServicios"></button>
+                <button onClick={show_hide}  value="showedFirst showedSecond secondBlockFirst botonServicios" className="buttonSecondBlock" id="botonServicios"></button>
                 <img src={Imagenes.imagenServicios} alt="imgserv" className="imgServiciosSecondBlock"></img>
             </div>
 
@@ -34,7 +52,7 @@ const Servicios = ()=>{
                 <h3>SERVICIOS</h3>
             </div>
 
-            <div className="dontShowItFirst" hidden>
+            <div className="showedSecond" hidden>
             
                 <div className="MarketingServicios">
                     <img src={Imagenes.tarjetaMarketing} alt="imgprueba" className="imgServicios"></img>
