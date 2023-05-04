@@ -33,17 +33,22 @@ const ModalYasmin = ()=>{
                 </div>
                 <div className="informacionModal">
                     <p> 
-                        Desarrollador Fullstack con experiencia trabajando en Javascript, React, Redux, entre otras
-                        tecnologías, entusiasmado por fortalecer mi pasión por la programación y emocionado por
-                        encontrar nuevos desafíos donde pueda aportar valor desde mi experiencia y conocimientos
-                        adquiridos. 
+                    Mi nombre es Yas, soy fotógrafa. 
+Me apasiona la fotografía y me mantengo en constante aprendizaje y crecimiento. 
+
+A través de mi trabajo busco destacar productos y el funcionamiento de ellos, registrar momentos para que sean rememorados y dejen una huella. 
+
+Considero que lo más importante de un producto o servicio, es la relación que se tiene con el cliente, la parte humana y eso es lo que transmito en mis fotografías. 
+
+Habilidades 
+
+Puntual - Perceptiva -  Trabajo en equipo  
+
+Tecnología fotográfica, sonora, programas de Adobe y redes sociales.
                     </p>
                     <br/>
                     <p>
-                        Además fuí partícipe en la creación de un E-commerce para la compra y venta de productos en la región
-                        Latam, permitiéndome mejorar mis habilidades tecnológicas y socioemocionales tales como
-                        trabajo en equipo, análisis, resolución de problemas, empatía, mente abierta, perseverancia y 
-                        responsabilidad.
+                       
                     </p>
                 </div>
                 <div className="introduccionModal">

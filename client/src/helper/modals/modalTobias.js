@@ -33,17 +33,24 @@ const ModalTobias = ()=>{
                 </div>
                 <div className="informacionModal">
                     <p> 
-                        Desarrollador Fullstack con experiencia trabajando en Javascript, React, Redux, entre otras
-                        tecnologías, entusiasmado por fortalecer mi pasión por la programación y emocionado por
-                        encontrar nuevos desafíos donde pueda aportar valor desde mi experiencia y conocimientos
-                        adquiridos. 
+                    Soy un joven estudiante, trabajador y soñador. En la constante búsqueda de la excelencia. Me encanta la comunicación, el como ver y escuchar algo nos puede generar distintas emociones y sensaciones. 
+
+"Aprender es como remar contra corriente; en cuanto se deja de avanzar, se retrocede".
+
+Me enfoco principalmente en las relaciones sociales. Creo firmemente que el éxito de una marca se relaciona con la interacción que esta tiene con su público. En el accionar e influencia que aplica en su comunidad.
+
+
+Habilidades
+
+Habilidades sociales - Pensamiento creativo - Organizado 
+
+Tecnologías
+
+Línea de programas de Adobe - Redes sociales
                     </p>
                     <br/>
                     <p>
-                        Además fuí partícipe en la creación de un E-commerce para la compra y venta de productos en la región
-                        Latam, permitiéndome mejorar mis habilidades tecnológicas y socioemocionales tales como
-                        trabajo en equipo, análisis, resolución de problemas, empatía, mente abierta, perseverancia y 
-                        responsabilidad.
+                        
                     </p>
                 </div>
                 <div className="introduccionModal">
