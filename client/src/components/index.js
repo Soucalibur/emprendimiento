@@ -15,14 +15,14 @@ const Index = ()=>{
     LenisFunction()
 
     window.onload = ()=>{
-        console.log("ENTROOOO")
+        window.alert("ENTROOOO")
         const primerDiv = document.getElementById("primerDiv")
         primerDiv.style.display = "none"
-        console.log("PASOOOO")
+        window.alert("PASOOOO")
         const segundoDiv = document.getElementById("segundoDiv")
         segundoDiv.hidden = false
         segundoDiv.className = "containerIndex"
-        console.log("TERMINOO")
+        window.alert("TERMINOOOO")
     }
     return(
         <div>
