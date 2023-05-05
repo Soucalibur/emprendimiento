@@ -19,7 +19,6 @@ const Navbar = ()=>{
 
     const disappearLinks = ()=>{
         const modalMenuPhone =  document.getElementsByClassName("modalMenuPhone")
-        console.log(modalMenuPhone[0].style)
         modalMenuPhone[0].style.opacity = 0
         modalMenuPhone[0].style.transition = "1s"
         setTimeout(() => {
@@ -37,7 +36,7 @@ const Navbar = ()=>{
                     <Link 
                         to="sobreNosotros"
                         smooth="easeInOutQuart"
-                        duration="1200"
+                        duration= {1200}
                         spy={true}
                         activeClass="active"
                         offset={-64}
@@ -49,7 +48,7 @@ const Navbar = ()=>{
                     <Link 
                         to="servicios"
                         smooth="easeInOutQuart"
-                        duration="1200"
+                        duration= {1200}
                         spy={true}
                         activeClass= "active"
                         offset={-64}
@@ -62,7 +61,7 @@ const Navbar = ()=>{
                     <Link 
                         to="contacto"
                         smooth="easeInOutQuart"
-                        duration="1200"
+                        duration= {1200}
                         spy={true}
                         activeClass="active"
                         offset={-64}
@@ -81,7 +80,7 @@ const Navbar = ()=>{
                         <Link 
                             to="sobreNosotros"
                             smooth="easeInOutQuart"
-                            duration="1200"
+                            duration= {1200}
                             spy={true}
                             activeClass="active"
                             offset={-64}
@@ -94,7 +93,7 @@ const Navbar = ()=>{
                         <Link 
                             to="servicios"
                             smooth="easeInOutQuart"
-                            duration="1200"
+                            duration= {1200}
                             spy={true}
                             activeClass= "active"
                             offset={-64}
@@ -108,7 +107,7 @@ const Navbar = ()=>{
                         <Link 
                             to="contacto"
                             smooth="easeInOutQuart"
-                            duration="1200"
+                            duration= {1200}
                             spy={true}
                             activeClass="active"
                             offset={-64}
