@@ -22,7 +22,7 @@ const Index = ()=>{
             const segundoDiv = document.getElementById("segundoDiv")
             segundoDiv.hidden = false
             segundoDiv.className = "containerIndex"
-        }, 2000);
+        }, 3000);
     },[])
     // window.onload = ()=>{
     //     window.alert("ENTROOOO")
