@@ -1,5 +1,6 @@
 import s from "../../css/modal.css"
 import Imagenes from "../../css/img/imagenes"
+import ImagenesModals from "../../helper/img/imgModals/imagenesModals"
 const ModalTobias = ()=>{
 
     const closeModal = (event)=>{
@@ -29,55 +30,29 @@ const ModalTobias = ()=>{
 
                 </div>
                 <div className="containerImgModal">
-                    <img src={Imagenes.tarjetaDesarrolloWeb} alt="imgMatt" className="imgModal"></img>
+                    <img src={ImagenesModals.imagenTobias} alt="imgMatt" className="imgModal"></img>
                 </div>
-                <div className="informacionModal">
+                <div className="informacionModal infAdicionalTobias">
                     <p> 
-                    Soy un joven estudiante, trabajador y soñador. En la constante búsqueda de la excelencia. Me encanta la comunicación, el como ver y escuchar algo nos puede generar distintas emociones y sensaciones. 
-
-"Aprender es como remar contra corriente; en cuanto se deja de avanzar, se retrocede".
-
-Me enfoco principalmente en las relaciones sociales. Creo firmemente que el éxito de una marca se relaciona con la interacción que esta tiene con su público. En el accionar e influencia que aplica en su comunidad.
-
-
-Habilidades
-
-Habilidades sociales - Pensamiento creativo - Organizado 
-
-Tecnologías
-
-Línea de programas de Adobe - Redes sociales
+                    Soy un joven estudiante, trabajador y soñador en la constante búsqueda de la excelencia.
+                    <br/>
+                    Me encanta la comunicación, el como ver y escuchar algo nos puede generar distintas emociones y sensaciones. 
+                    <br/>
+                    Me enfoco principalmente en las relaciones sociales. 
+                    <br/>
+                    Creo firmemente que el éxito de una marca se relaciona con la interacción que esta tiene con su público, sobre todo en el accionar e influencia que aplica en su comunidad.
+                    <br/>
+                    <br/>
+                    "Aprender es como remar contra corriente; en cuanto se deja de avanzar, se retrocede".
                     </p>
                     <br/>
-                    <p>
-                        
-                    </p>
                 </div>
                 <div className="introduccionModal">
                     <h3>Tecnologías</h3>
-                    <p>HTML, CSS, Javascript, React, Redux, Node.js, Express, Postgres, Sequelize, Python</p>
-                    <h3>Links de contactos</h3>
-                    <div className="containerLogosFooter">
-                        <div>
-                            <a href="https://www.linkedin.com/in/matthewfullstack/" target="_blank" rel="noopener noreferrer">
-                                <img className="imgLogo" src={Imagenes.logoLinkedIn} alt="linkedinimg"></img>
-                            </a>
-                        </div>
-                        
-                        <div>
-                            <a href="https://github.com/Soucalibur" target="_blank" rel="noopener noreferrer" >
-                                <img className="imgLogo" src={Imagenes.logoGithub} alt="githubimg"></img>
-                            </a>
-                        </div>
+                    <p>Línea de programas de Adobe - Redes sociales</p>
+                    <h3>Habilidades</h3>
+                    <p>Habilidades sociales - Pensamiento creativo - Organizado </p>
 
-                        <div>
-                            <a href="https://portfolio-pbhoz3dhf-soucalibur.vercel.app/" target="_blank" rel="noopener noreferrer">
-                                <img className="imgLogo" src={Imagenes.logoPortfolio} alt="portfolioimg"></img>
-                            </a>
-                        </div>
-
-
-                    </div>
                 </div>
                 
             </div>

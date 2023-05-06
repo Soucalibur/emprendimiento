@@ -1,5 +1,7 @@
 import s from "../../css/modal.css"
 import Imagenes from "../../css/img/imagenes"
+import ImagenesModals from "../img/imgModals/imagenesModals"
+
 const ModalYasmin = ()=>{
 
     const closeModal = (event)=>{
@@ -29,53 +31,29 @@ const ModalYasmin = ()=>{
 
                 </div>
                 <div className="containerImgModal">
-                    <img src={Imagenes.tarjetaDesarrolloWeb} alt="imgMatt" className="imgModal"></img>
+                    <img src={ImagenesModals.imagenYasmin} alt="imgMatt" className="imgModal"></img>
                 </div>
-                <div className="informacionModal">
+                <div className="informacionModal infAdicionalYasmin">
                     <p> 
                     Mi nombre es Yas, soy fotógrafa. 
-Me apasiona la fotografía y me mantengo en constante aprendizaje y crecimiento. 
-
-A través de mi trabajo busco destacar productos y el funcionamiento de ellos, registrar momentos para que sean rememorados y dejen una huella. 
-
-Considero que lo más importante de un producto o servicio, es la relación que se tiene con el cliente, la parte humana y eso es lo que transmito en mis fotografías. 
-
-Habilidades 
-
-Puntual - Perceptiva -  Trabajo en equipo  
-
-Tecnología fotográfica, sonora, programas de Adobe y redes sociales.
+                    Me apasiona la fotografía y me mantengo en constante aprendizaje y crecimiento. 
+                    <br/>
+                    <br/>
+                    A través de mi trabajo busco destacar productos y el funcionamiento de ellos, registrar momentos para que sean rememorados y dejen una huella. 
+                    <br/>
+                    <br/>
+                    Considero que lo más importante de un producto o servicio, es la relación que se tiene con el cliente, la parte humana y eso es lo que transmito en mis fotografías. 
+                    
                     </p>
                     <br/>
-                    <p>
-                       
-                    </p>
+                    
                 </div>
                 <div className="introduccionModal">
                     <h3>Tecnologías</h3>
-                    <p>HTML, CSS, Javascript, React, Redux, Node.js, Express, Postgres, Sequelize, Python</p>
-                    <h3>Links de contactos</h3>
-                    <div className="containerLogosFooter">
-                        <div>
-                            <a href="https://www.linkedin.com/in/matthewfullstack/" target="_blank" rel="noopener noreferrer">
-                                <img className="imgLogo" src={Imagenes.logoLinkedIn} alt="linkedinimg"></img>
-                            </a>
-                        </div>
-                        
-                        <div>
-                            <a href="https://github.com/Soucalibur" target="_blank" rel="noopener noreferrer" >
-                                <img className="imgLogo" src={Imagenes.logoGithub} alt="githubimg"></img>
-                            </a>
-                        </div>
-
-                        <div>
-                            <a href="https://portfolio-pbhoz3dhf-soucalibur.vercel.app/" target="_blank" rel="noopener noreferrer">
-                                <img className="imgLogo" src={Imagenes.logoPortfolio} alt="portfolioimg"></img>
-                            </a>
-                        </div>
-
-
-                    </div>
+                    <p>Tecnología fotográfica, sonora, programas de Adobe y redes sociales.</p>
+                    <h3>Habilidades</h3>
+                    <p>Puntual - Perceptiva -  Trabajo en equipo </p>
+                    
                 </div>
                 
             </div>

@@ -1,5 +1,6 @@
 import s from "../../css/modal.css"
 import Imagenes from "../../css/img/imagenes"
+import ImagenesModals from "../../helper/img/imgModals/imagenesModals"
 
 const ModalMatthew = ()=>{
 
@@ -27,43 +28,43 @@ const ModalMatthew = ()=>{
 
                 </div>
                 <div className="containerImgModal">
-                    <img src={Imagenes.tarjetaDesarrolloWeb} alt="imgMatt" className="imgModal"></img>
+                    <img src={ImagenesModals.imagenMatthew} alt="imgMatt" className="imgModal"></img>
                 </div>
-                <div className="informacionModal">
-                    <p> 
-                        Desarrollador Fullstack con experiencia trabajando en Javascript, React, Redux, entre otras
-                        tecnologías, entusiasmado por fortalecer mi pasión por la programación y emocionado por
-                        encontrar nuevos desafíos donde pueda aportar valor desde mi experiencia y conocimientos
-                        adquiridos. 
-                    </p>
-                    <br/>
-                    <p>
-                        Además fuí partícipe en la creación de un E-commerce para la compra y venta de productos en la región
-                        Latam, permitiéndome mejorar mis habilidades tecnológicas y socioemocionales tales como
-                        trabajo en equipo, análisis, resolución de problemas, empatía, mente abierta, perseverancia y 
-                        responsabilidad.
-                    </p>
+                <div className="informacionModal infAdicionalMatthew tamañoTextoMatthew">
+                Apasionado desarrollador web Fullstack con enfoque especializado en tecnologías clave como Javascript, React y PostgreSQL.
+                <br/>
+                Mi objetivo es ayudar a las personas a destacar en línea, creando soluciones web personalizadas, innovadoras, atractivas, interactivas y funcionales que brinden una experiencia de usuario excepcional y resalten su presencia en la web.
+                <br/>
+                <br/>
+                Si buscas un desarrollador web Fullstack comprometido, entusiasta y orientado a resultados, estoy aquí para ayudarte a lograr tus objetivos en línea.
+                <br/>
+                Juntos, podemos crear una presencia web efectiva y exitosa.
+
+                    
+                    
                 </div>
-                <div className="introduccionModal">
+                <div className="introduccionModal posicionPersonalIntroduccionMatthew">
                     <h3>Tecnologías</h3>
                     <p>HTML, CSS, Javascript, React, Redux, Node.js, Express, Postgres, Sequelize, Python</p>
+                    <h3>Habilidades</h3>
+                    <p> Trabajo en equipo - análisis - resolución de problemas - empatía - mente abierta - perseverancia - responsabilidad</p>
                     <h3>Links de contactos</h3>
                     <div className="containerLogosFooter">
                                     <div>
                                         <a href="https://www.linkedin.com/in/matthewfullstack/" target="_blank" rel="noopener noreferrer">
-                                            <img className="imgLogo" src={Imagenes.logoLinkedIn} alt="linkedinimg"></img>
+                                            <img className="imgLogoModal" src={Imagenes.logoLinkedIn} alt="linkedinimg"></img>
                                         </a>
                                     </div>
                                     
                                     <div>
                                         <a href="https://github.com/Soucalibur" target="_blank" rel="noopener noreferrer" >
-                                            <img className="imgLogo" src={Imagenes.logoGithub} alt="githubimg"></img>
+                                            <img className="imgLogoModal" src={Imagenes.logoGithub} alt="githubimg"></img>
                                         </a>
                                     </div>
 
                                     <div>
-                                        <a href="https://portfolio-pbhoz3dhf-soucalibur.vercel.app/" target="_blank" rel="noopener noreferrer">
-                                            <img className="imgLogo" src={Imagenes.logoPortfolio} alt="portfolioimg"></img>
+                                        <a href="https://portfoliomattgallar.vercel.app/" target="_blank" rel="noopener noreferrer">
+                                            <img className="imgLogoModal" src={Imagenes.logoPortfolio} alt="portfolioimg"></img>
                                         </a>
                                     </div>
 
