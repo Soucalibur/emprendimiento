@@ -48,7 +48,7 @@ const Footer = () =>{
     }
 
     return(
-        <div className="fourthBlock"> 
+        <div className="fourthBlock" id="equipo"> 
             
             <div className="mostrarPrimeroEquipo">
                 <h3 className="tituloPrimeroEquipo">EQUIPO</h3>

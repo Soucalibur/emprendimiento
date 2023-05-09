@@ -41,7 +41,7 @@ const ModalYasmin = ()=>{
 
                 {/* Div derecho */}
                 <div className="divDerechoModal">
-                    <div className="informacionModal infAdicionalYasmin">
+                    <div className="informacionModal">
                         <p> 
                         Mi nombre es Yas, soy fotógrafa. 
                         Me apasiona la fotografía y me mantengo en constante aprendizaje y crecimiento. 
@@ -56,7 +56,7 @@ const ModalYasmin = ()=>{
                         <br/>
                         
                     </div>
-                    <div className="introduccionModal">
+                    <div className="introduccionModal infAdicionalYasmin">
                         <h3>Tecnologías</h3>
                         <p>Tecnología fotográfica, sonora, programas de Adobe y redes sociales.</p>
                         <h3>Habilidades</h3>

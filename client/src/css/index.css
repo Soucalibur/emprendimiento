@@ -108,22 +108,19 @@
   transition: .7s;
   
   /* Sizes and Positions */
-  height: 5em;
-  width: 5em;
-  z-index: 10;
+  height: 4em;
+  width: 4em;
+  z-index: 1;
   bottom:0;
   right: 0;
-  margin-bottom: 3em;
-  margin-right: 3em;
+  margin-bottom: 5%;
+  margin-right: 5%;
 }
 .imgLogoWsp:hover{
 
-  /* Properties */
-  
-
   /* Sizes and Positions */
-  height: 6em;
-  width: 6em;
+  height: 5em;
+  width: 5em;
   
 }
 

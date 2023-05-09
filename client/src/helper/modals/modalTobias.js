@@ -38,7 +38,7 @@ const ModalTobias = ()=>{
 
                 {/* Div derecho */}
                 <div className="divDerechoModal">
-                    <div className="informacionModal infAdicionalTobias">
+                    <div className="informacionModal">
                         <p> 
                         Soy un joven estudiante, trabajador y soñador en la constante búsqueda de la excelencia.
                         <br/>
@@ -53,7 +53,7 @@ const ModalTobias = ()=>{
                         </p>
                         <br/>
                     </div>
-                    <div className="introduccionModal">
+                    <div className="introduccionModal infAdicionalTobias">
                         <h3>Tecnologías</h3>
                         <p>Línea de programas de Adobe - Redes sociales</p>
                         <h3>Habilidades</h3>

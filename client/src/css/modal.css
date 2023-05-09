@@ -57,8 +57,8 @@
     /* Properties */
     flex-direction: row;
     background: linear-gradient(30deg, rgba(114,50,242,1) 10%, rgba(32,17,91,1) 37%, rgba(1,1,8,1) 79%);
-    border: 2px solid white;
-
+    border: 1px solid white;
+    border-radius: 20px;
     /* Sizes */
     height: 80vh;
     width: 80vw;
@@ -146,6 +146,14 @@
     text-align: center;
 
 }
+
+.infAdicionalTobias{
+    margin: 0em;
+}
+.infAdicionalYasmin{
+    margin: 0em;
+}
+
 .posicionPersonalIntroduccionMatthew{
     margin: 0;
 }

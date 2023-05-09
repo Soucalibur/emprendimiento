@@ -6,7 +6,7 @@
     display: flex;
 
     /* Properties */
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background: linear-gradient(0deg, rgba(114,50,242,1) 0%, rgba(34,18,95,1) 27%, rgba(1,1,8,1) 79%);
     box-shadow: 0 4px 10px rgba(114,50,242,1);
@@ -14,7 +14,16 @@
     /* Sizes */
     height: 4em;
 }
-
+.div1Navbar{
+    display: flex;
+    margin-left: 3%;
+}
+.div2Navbar{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin-right: 3em;
+}
 /* Elementos del Navbar */
 
 .imgNavbar{
@@ -22,8 +31,8 @@
     cursor: pointer;
 
     /* Sizes */
-    width: 6em;
-    height: 3em;
+    width: 4em;
+    height: 2em;
 }
 
 .navegators{
@@ -34,7 +43,7 @@
     cursor: pointer;
     z-index: 5;
     /* Sizes */
-    font-size: 1.2em;
+    font-size: 1em;
     transition: 0.5s;
     
 }
@@ -47,7 +56,7 @@
     
 }
 .navegators:hover{
-    font-size: 1.4em;
+
     color: #05b1d8;
     transition: 0.5s;
     border-radius: 20px;
@@ -65,7 +74,6 @@
     display: none;
     
     
-    height: 15vh;
     color: white;
     z-index: 5;
     background-color: rgb(22, 0, 56);
@@ -94,7 +102,8 @@
 
 @media (max-width: 700px){
     .containerNavbar{
-       padding: 0 0 0 28%;
+       padding: 0 0 0 32%;
+       
     }
     .navegators{
         display: none;
@@ -107,7 +116,13 @@
         color: white;
         font-size: 2em;
         cursor: pointer;
+        margin-right: 10%;
 
+    }
+    .div1Navbar{
+        display: flex;
+        justify-content: center;
+        align-self: center;
     }
 }
 
