@@ -21,56 +21,63 @@ const ModalMatthew = ()=>{
             </div>
             <div className="containerModal">
 
-                <div className="tituloModal">
-                    <h3>MATTHEW GALLAR</h3>
-                </div>
-                <div className="closeAnyWay">
-
-                </div>
-                <div className="containerImgModal">
-                    <img src={ImagenesModals.imagenMatthew} alt="imgMatt" className="imgModal"></img>
-                </div>
-                <div className="informacionModal infAdicionalMatthew tamañoTextoMatthew">
-                Apasionado desarrollador web Fullstack con enfoque especializado en tecnologías clave como Javascript, React y PostgreSQL.
-                <br/>
-                Mi objetivo es ayudar a las personas a destacar en línea, creando soluciones web personalizadas, innovadoras, atractivas, interactivas y funcionales que brinden una experiencia de usuario excepcional y resalten su presencia en la web.
-                <br/>
-                <br/>
-                Si buscas un desarrollador web Fullstack comprometido, entusiasta y orientado a resultados, estoy aquí para ayudarte a lograr tus objetivos en línea.
-                <br/>
-                Juntos, podemos crear una presencia web efectiva y exitosa.
-
+                {/* Div izquierdo */}
+                <div className="divIzquierdoModal">
+                    <div className="tituloModal">
+                        <h3>MATTHEW GALLAR</h3>
+                    </div>
                     
-                    
+                    <div className="containerImgModal">
+                        <img src={ImagenesModals.imagenMatthew} alt="imgMatt" className="imgModal"></img>
+                    </div>
                 </div>
-                <div className="introduccionModal posicionPersonalIntroduccionMatthew">
-                    <h3>Tecnologías</h3>
-                    <p>HTML, CSS, Javascript, React, Redux, Node.js, Express, Postgres, Sequelize, Python</p>
-                    <h3>Habilidades</h3>
-                    <p> Trabajo en equipo - análisis - resolución de problemas - empatía - mente abierta - perseverancia - responsabilidad</p>
-                    <h3>Links de contactos</h3>
-                    <div className="containerLogosFooter">
-                                    <div>
-                                        <a href="https://www.linkedin.com/in/matthewfullstack/" target="_blank" rel="noopener noreferrer">
-                                            <img className="imgLogoModal" src={Imagenes.logoLinkedIn} alt="linkedinimg"></img>
-                                        </a>
-                                    </div>
-                                    
-                                    <div>
-                                        <a href="https://github.com/Soucalibur" target="_blank" rel="noopener noreferrer" >
-                                            <img className="imgLogoModal" src={Imagenes.logoGithub} alt="githubimg"></img>
-                                        </a>
-                                    </div>
 
-                                    <div>
-                                        <a href="https://portfoliomattgallar.vercel.app/" target="_blank" rel="noopener noreferrer">
-                                            <img className="imgLogoModal" src={Imagenes.logoPortfolio} alt="portfolioimg"></img>
-                                        </a>
-                                    </div>
+                {/* Div derecho */}
 
-        
-                                </div>
+                <div className="divDerechoModal">
+                    <div className="informacionModal infAdicionalMatthew">
+                    Apasionado desarrollador web Fullstack con enfoque especializado en tecnologías clave como Javascript, React y PostgreSQL.
+                    <br/>
+                    Mi objetivo es ayudar a las personas a destacar en línea, creando soluciones web personalizadas, innovadoras, atractivas, interactivas y funcionales que brinden una experiencia de usuario excepcional y resalten su presencia en la web.
+                    <br/>
+                    <br/>
+                    Si buscas un desarrollador web Fullstack comprometido, entusiasta y orientado a resultados, estoy aquí para ayudarte a lograr tus objetivos en línea.
+                    <br/>
+                    Juntos, podemos crear una presencia web efectiva y exitosa.
+
+                        
+                        
+                    </div>
+                    <div className="introduccionModal posicionPersonalIntroduccionMatthew">
+                        <h3>Tecnologías</h3>
+                        <p>HTML, CSS, Javascript, React, Redux, Node.js, Express, Postgres, Sequelize, Python</p>
+                        <h3>Habilidades</h3>
+                        <p> Trabajo en equipo - análisis - resolución de problemas - empatía - mente abierta - perseverancia - responsabilidad</p>
+                        <h3>Links de contactos</h3>
+                        <div className="containerLogosFooter">
+                                        <div>
+                                            <a href="https://www.linkedin.com/in/matthewfullstack/" target="_blank" rel="noopener noreferrer">
+                                                <img className="imgLogoModal" src={Imagenes.logoLinkedIn} alt="linkedinimg"></img>
+                                            </a>
+                                        </div>
+                                        
+                                        <div>
+                                            <a href="https://github.com/Soucalibur" target="_blank" rel="noopener noreferrer" >
+                                                <img className="imgLogoModal" src={Imagenes.logoGithub} alt="githubimg"></img>
+                                            </a>
+                                        </div>
+
+                                        <div>
+                                            <a href="https://portfoliomattgallar.vercel.app/" target="_blank" rel="noopener noreferrer">
+                                                <img className="imgLogoModal" src={Imagenes.logoPortfolio} alt="portfolioimg"></img>
+                                            </a>
+                                        </div>
+
+            
+                                    </div>
+                    </div>
                 </div>
+                {/* Div boton cerrar */}
                 <div>
                     <button onClick={closeModal} value="modalMatthew" className="botonCerrarModal">X</button>
                 </div>

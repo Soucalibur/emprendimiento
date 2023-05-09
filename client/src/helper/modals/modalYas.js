@@ -24,37 +24,48 @@ const ModalYasmin = ()=>{
             </div>
             <div className="containerModal">
                 
-                <div className="tituloModal">
-                    <h3>YASMIN ZAVARONI</h3>
-                </div>
-                <div className="closeAnyWay">
+                {/* Div izquierd */}
 
+                <div className="divIzquierdoModal">
+                    <div className="tituloModal">
+                        <h3>YASMIN ZAVARONI</h3>
+                    </div>
+                    <div className="closeAnyWay">
+
+                    </div>
+                    <div className="containerImgModal">
+                        <img src={ImagenesModals.imagenYasmin} alt="imgMatt" className="imgModal"></img>
+                    </div>
                 </div>
-                <div className="containerImgModal">
-                    <img src={ImagenesModals.imagenYasmin} alt="imgMatt" className="imgModal"></img>
+                {/* --------------- */}
+
+                {/* Div derecho */}
+                <div className="divDerechoModal">
+                    <div className="informacionModal infAdicionalYasmin">
+                        <p> 
+                        Mi nombre es Yas, soy fotógrafa. 
+                        Me apasiona la fotografía y me mantengo en constante aprendizaje y crecimiento. 
+                        <br/>
+                        <br/>
+                        A través de mi trabajo busco destacar productos y el funcionamiento de ellos, registrar momentos para que sean rememorados y dejen una huella. 
+                        <br/>
+                        <br/>
+                        Considero que lo más importante de un producto o servicio, es la relación que se tiene con el cliente, la parte humana y eso es lo que transmito en mis fotografías. 
+                        
+                        </p>
+                        <br/>
+                        
+                    </div>
+                    <div className="introduccionModal">
+                        <h3>Tecnologías</h3>
+                        <p>Tecnología fotográfica, sonora, programas de Adobe y redes sociales.</p>
+                        <h3>Habilidades</h3>
+                        <p>Puntual - Perceptiva -  Trabajo en equipo </p>
+                        
+                    </div>
                 </div>
-                <div className="informacionModal infAdicionalYasmin">
-                    <p> 
-                    Mi nombre es Yas, soy fotógrafa. 
-                    Me apasiona la fotografía y me mantengo en constante aprendizaje y crecimiento. 
-                    <br/>
-                    <br/>
-                    A través de mi trabajo busco destacar productos y el funcionamiento de ellos, registrar momentos para que sean rememorados y dejen una huella. 
-                    <br/>
-                    <br/>
-                    Considero que lo más importante de un producto o servicio, es la relación que se tiene con el cliente, la parte humana y eso es lo que transmito en mis fotografías. 
-                    
-                    </p>
-                    <br/>
-                    
-                </div>
-                <div className="introduccionModal">
-                    <h3>Tecnologías</h3>
-                    <p>Tecnología fotográfica, sonora, programas de Adobe y redes sociales.</p>
-                    <h3>Habilidades</h3>
-                    <p>Puntual - Perceptiva -  Trabajo en equipo </p>
-                    
-                </div>
+
+                {/* ------------------ */}
                 
             </div>
         </div>
