@@ -49,9 +49,5 @@ Gracias por tu interés en nuestro emprendimiento.
   
   
 
-### ***Contact Point***  
+### ***[Contact Point](https://emprendimiento.vercel.app/)***  
 
-<br />
-
-----
-<div align="center">Generated using <a href="https://profilinator.rishav.dev/" target="_blank">Github Profilinator</a></div>
