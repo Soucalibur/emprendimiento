@@ -1,6 +1,6 @@
 import {Route} from "react-router-dom"
 import Index from './components';
-// import Navbar from './components/navbar';
+// import Navbar from './components/navbar'
 
 function App() {
   return (
