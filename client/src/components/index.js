@@ -3,7 +3,7 @@ import Slider from "../helper/carousel"
 import SobreNosotros from "./sobreNosotros"
 import Servicios from "./servicios"
 import ContactUsForm from "../helper/contactUsForm"
-import Footer from "./footer"
+import Equipo from "./equipo"
 
 import s from "../css/index.css"
 import LenisFunction from "../helper/lenis"
@@ -44,7 +44,7 @@ const Index = ()=>{
                 <Slider/>
                 <SobreNosotros/>
                 <Servicios/>
-                <Footer/>
+                <Equipo/>
                 <ContactUsForm/>
                 <WspLink/>
             </div>

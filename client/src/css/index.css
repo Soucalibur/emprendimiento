@@ -53,17 +53,16 @@
 /* Contenedor posiciones */
 
 .positionNavbar{
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 2;
+    width: 100%;
 }
 
 .firstBlock{
     /* Properties */
     background-color: black;  
 
-    /* Sizes */
-    height: 91vh;
 }
 
 
@@ -74,8 +73,8 @@
     /* Properties */
     display: flex;
     justify-content: center;
-    background-color: black;   
-    
+    /* background-color: black;    */
+    background: rgba(255, 255, 255, 0.1);
     /* Sizes */
     height: 35em;
 }

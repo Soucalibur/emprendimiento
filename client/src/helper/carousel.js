@@ -16,7 +16,7 @@ const Slider = ()=>{
             <div className="firstBlock" id="nosotros">
                  <Swiper
                     slidesPerView={1}
-                    spaceBetween={30}
+                    // spaceBetween={0}
                     loop={true}
                     speed={1000}
                     pagination={{

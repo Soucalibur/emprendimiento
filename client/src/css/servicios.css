@@ -10,8 +10,10 @@
   
     /* Properties */
     align-items: center;
-    background: black;  
+    /* background: black;   */
+    background: rgba(255, 255, 255, 0.1);
     transition: 1s;
+
   }
   
   .dontShowItFirst{
@@ -97,16 +99,9 @@
   /* Segundo bloque despues */
   
   .secondBlockSecond{
-    /* Display */
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 20em;
-  
-    /* Properties */
-      transition: 1s;
-      background: black; 
-      border: 2px solid red;
-      
+   
+    background: rgba(255, 255, 255, 0.1);
+    
   }
   
   .showedSecond{

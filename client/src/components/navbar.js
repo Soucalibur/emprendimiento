@@ -2,6 +2,7 @@ import s from "../css/navbar.css"
 import Imagenes from "../css/img/imagenes";
 
 import { Link, animateScroll as scroll } from "react-scroll";
+import { useEffect } from "react";
 
 const Navbar = ()=>{
 
@@ -34,65 +35,89 @@ const Navbar = ()=>{
         }, 490);
     }
 
+   
+    useEffect(() => {
+        const handleScroll = () => {
+          const position = window.pageYOffset;
+          const navbar = document.getElementById("navbar")
+          if (position > 30) {
+            console.log(position, "es mayor a cero")
+            // navbar.style.background = "rgba(100, 100, 100,0.95)"
+            navbar.style.background = "rgb(18, 18, 18)"
+            // navbar.style.boxShadow = "0 4px 10px rgba(255,255,255,0.7)"
+            navbar.style.boxShadow = "0 4px 10px rgba(255, 255, 255, 0.1)"
+            
+            navbar.style.height = "9vh"
+          } if(position < 30) {
+            console.log(position, "es menor a cero");
+            navbar.style.background = "none";
+            navbar.style.boxShadow = "none"
+            navbar.style.height = "7vh"
+          }
+        };
+    
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+          window.removeEventListener('scroll', handleScroll);
+        };
+      }, []);
     return(
-        <div className="positionNavbar">
-            <div className="containerNavbar" >
+        <div className="positionNavbar" >
+            <div className="containerNavbar" id="navbar">
                 <div className="div1Navbar">
                     <div  onClick={scrollToTop}>
                         <img src={Imagenes.logoContactPoint} alt="imglogo" className="imgNavbar"></img>
                     </div>
                 </div>
                 <div className="div2Navbar">
-                    <div className="navegators">
+                    
                         <Link 
                             to="sobreNosotros"
                             smooth="easeInOutQuart"
                             duration= {1200}
                             spy={true}
                             activeClass="active"
-                            offset={-64}
+                            offset={-55}
+                            className="navegators"
                             >
                             <p>Quienes somos</p>
                         </Link>
-                    </div>
-                    <div className="navegators">
+                    
                         <Link 
                             to="servicios"
                             smooth="easeInOutQuart"
                             duration= {1200}
                             spy={true}
                             activeClass= "active"
-                            offset={-64}
+                            offset={-55}
+                            className="navegators"
                             >
                             <p>Servicios</p>
                         </Link>
                         
-                    </div>
-                    <div className="navegators">
                         <Link 
                             to="equipo"
                             smooth="easeInOutQuart"
                             duration= {1200}
                             spy={true}
                             activeClass="active"
-                            offset={-64}
+                            offset={-55}
+                            className="navegators"
                             >
                             <p>Equipo</p>
                         </Link>
-                    </div>
 
-                    <div className="navegators">
                         <Link 
                             to="contacto"
                             smooth="easeInOutQuart"
                             duration= {1200}
                             spy={true}
                             activeClass="active"
-                            offset={-64}
+                            offset={-55}
+                            className="navegators"
                             >
                             <p>Contacto</p>
                         </Link>
-                    </div>
                 </div>
                 {/* ---------------------------------------------- */}
                 <div className="navegatorPhone">

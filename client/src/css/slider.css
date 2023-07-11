@@ -1,15 +1,14 @@
 
 .swiper {
-    width: 100vw;
-    height: 90vh;
+    width: 98.6vw;
+    height: 100vh;
 
-    background: black; 
 }
 .swiper-slide {
     text-align: center;
     font-size: 18px;
     background: black; 
-  
+    
     /* Center slide text vertically */
     display: flex;
     justify-content: center;

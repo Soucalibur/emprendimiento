@@ -8,11 +8,12 @@
     /* Properties */
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(0deg, rgba(114,50,242,1) 0%, rgba(34,18,95,1) 27%, rgba(1,1,8,1) 79%);
-    box-shadow: 0 4px 10px rgba(114,50,242,1);
-    
+    /* background: linear-gradient(0deg, rgba(114,50,242,1) 0%, rgba(34,18,95,1) 27%, rgba(1,1,8,1) 79%); */
+    /* box-shadow: 0 4px 10px rgba(114,50,242,1); */
+    transition: 0.5s;
     /* Sizes */
-    height: 10vh;
+    /* height: 10vh; */
+    
 }
 .div1Navbar{
     display: flex;

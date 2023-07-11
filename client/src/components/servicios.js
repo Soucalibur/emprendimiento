@@ -28,9 +28,11 @@ const Servicios = ()=>{
             setTimeout(() => {
                 elementSecondBlockFirst[0].style.paddingBottom = 0
                 elementShowedFirst[0].style.display = "none"
-                elementSecondBlockFirst[0].style.className = "secondBlockSecond"
-                elementSecondBlockFirst[0].classList.remove("secondBlockFirst")
                 elementDontShowItFirst[0].style.display = "flex"
+
+                elementSecondBlockFirst[0].classList.add("secondBlockSecond")
+                elementSecondBlockFirst[0].classList.remove("secondBlockFirst")
+                
                 document.getElementsByClassName("nombreSegundoBotonServicios")[0].hidden = false
                 elementoNombreBotonServicios.style.display = "none"
             }, 1000);
